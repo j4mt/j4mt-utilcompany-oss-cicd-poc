@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <title> Airtricity - OSS Main Dashboard </title>
+    <!--[if lt IE 9]>
+                            <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+    <script type="text/javascript">
+    var JQ_ROOT_DIR = "";
+    </script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min-1.2.6.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min-1.5.14.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/document.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/reports.js"></script>
+    <script type="text/javascript" src="js/oss.js"></script>
+    <!--[if IE 7]>
+                            <link rel="stylesheet" type="text/css" href="css/ie7_style.css" />
+        <![endif]-->
+    <!--[if IE 8]>
+        <style>
+                            #kbsearchlink {
+                            float: right;
+                            vertical-align: bottom;
+                            margin-top: 28px;
+                            }
+        </style>
+        <![endif]-->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4334107-1']);
+    _gaq.push(['_setDomainName', '.airtricity.com']);
+    _gaq.push(['_setAllowHash', false]);
+    _gaq.push(['_trackPageview']);
+    (function()
+    {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </head>
+
+  <body id="co-reports" class="dashboard commercial">
+    <div class="m-header-2017  -business" data-js-module="header2017">
+      <div class="header-container">
+        <div class="my-account"> <a href="#"><i class="my-account-icon"><!-- my-account icon --></i></a> </div>
+        <div class="header">
+          <ul class="change-user-type">
+            <li><a href="#">At home</a></li>
+            <li><a href="#" class="selected">For business</a></li>
+          </ul>
+          <div class="change-user-region">
+            <!-- Input Select Component -->
+            <div class="c-input-select -dark-bg -small -no-margin -no-padding -business -small-chevron" data-js-component="inputSelect">
+              <!-- Hidden but exists for accessibility --><label for="header-country">Republic of Ireland</label>
+              <div class="select-input-container"> <select name="name" id="header-country" tabindex="0" class="cs-select cs-skin-border" data-value-preset="">
+            
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/ie/home" selected>Republic of Ireland</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/uk/home" >Northern Ireland Electricity</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="http://www.airtricitygasni.com/at-home/" >Northern Ireland Gas</option>
+
+            
+        </select> </div>
+            </div>
+            <!-- End Input Select Component -->
+          </div> <a class="contact-us" href="#">Contact us</a> <a class="log-out" href="#">Log out</a> </div>
+        <div class="content"> <a href="" class="logo"></a>
+          <ul class="navigation">
+            <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">Products &amp; Services</a>
+              <ul class="sub-menu">
+                <li><a href="business-energy-small.html">Small Business (&euro;1-10k)</a></li>
+                <li><a href="business-energy-medium.html">Medium Business (&euro;10-200k)</a></li>
+                <li><a href="business-energy-large.html">Large Business (&euro;200k-unlimited)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">About us</a>
+              <ul class="sub-menu">
+                <li><a href="business-energy-small.html">About us</a></li>
+                <li><a href="business-energy-medium.html">Energy tips</a></li>
+                <li><a href="business-energy-large.html">Energy sources</a></li>
+              </ul>
+            </li>
+            <li class="is-active"><a href="#" class="my-account-icon">My account</a></li>
+            <li><a href="#" class="search-icon" data-modal-target="search">Search</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main center clearfix">
+      <div class="container">
+        <div class="left-nav">
+          <h3><a href="/oss_web/menu-dashboard-oss-co.htm">Account Overview</a></h3>
+          <ul>
+            <li><a href="/oss_web/billing-oss-co.htm">Billing</a></li>
+            <li><a href="/oss_web/oss-co-reports.htm?RT=CONSUMPTION" class="current">Usage Reports</a></li>
+            <li><a href="/oss_web/oss-co-csv-reports.htm">Data Export</a></li>
+            <li><a href="/oss_web/reading-oss-co.htm">Meter Readings</a></li>
+            <li><a href="/oss_web/admin-users.htm">Admin</a></li>
+          </ul>
+        </div>
+        <div id="right-column">
+          <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+          <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+          <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+          <!--[if lt ie 9]>
+                    <div class="browser-support">
+                        <div class="error"></div>
+                        <h2>We have detected that you are using an out-of-date browser.</h2>
+                        <p>To ensure a smooth and reliable performance while using this site we strongly recommend you use a modern browser, such as Chrome, Firefox, or Internet Explorer (version 9 or higher).</p>
+                        <h3>What can I do?</h3>
+                        <ul>
+                            <li>You may already have <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Firefox</a>, or <a href="http://windows.microsoft.com/en-IE/internet-explorer/download-ie" target="_blank">Internet Explorer</a> (version 9 or higher) installed on your
+computer. We recommend you use one of these browsers. If you don't have any of these, you can download them for free.</li>
+                            <li>Talk to your company's IT department, which may be able to provide you with an alternative browser.</li>
+                        </ul>
+                    </div>
+                    <![endif]-->
+          <form id="goReportForm" action="/oss_web/oss-co-reports.htm?RT=CONSUMPTION" method="post">
+            <h1>Usage Reports</h1>
+            <div class="clearfix module">
+              <!-- START REPORT TYPES -->
+              <div id="pa-choose-report-types" class="step">
+                <div class="module-content pa-reports-box clearfix">
+                  <!-- /.pa-report-summary -->
+                  <div class="pa-report-selection">
+                    <h2>Create your report</h2>
+                    <h4>What type of report would you like to run?</h4>
+                    <table class="stripe">
+                      <colgroup>
+                        <col width="32%" />
+                        <col width="68%" /> </colgroup>
+                      <thead>
+                        <tr>
+                          <th style="text-align:left;">Select report type</th>
+                          <th style="text-align:left;">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input id="CONSUMPTION" checked="checked" class="reportType" name="reportType" type="radio" value="CONSUMPTION" /> <label for="CONSUMPTION">Consumption</label><a href="#CONSUMPTION-tooltip" class="toolTip after"></a></td>
+                          <td>Consolidated report of your energy usage</td>
+                        </tr>
+                        <tr>
+                          <td><input id="MAXIMUMIMPORTCAPACITY" class="reportType" type="radio" name="reportType" value="MAXIMUMIMPORTCAPACITY" /> <label for="MAXIMUMIMPORTCAPACITY">Maximum Import Capacity</label><a href="#MAXIMUMIMPORTCAPACITY-tooltip" class="toolTip after"></a></td>
+                          <td>Maximum Import Capacity Information on MPRN displaying any breaches and excess</td>
+                        </tr>
+                        <tr>
+                          <td><input id="TARIFF" class="reportType" type="radio" name="reportType" value="TARIFF" /> <label for="TARIFF">Cost Breakdown</label><a href="#TARIFF-tooltip" class="toolTip after"></a></td>
+                          <td>Detailed breakdown of total cost and consumption information</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.pa-report-selection -->
+                </div>
+                <!-- /.module-content pa-reports-box clearfix -->
+              </div>
+              <!-- END REPORT TYPES  -->
+              <!-- START REPORTING PERIOD -->
+              <div id="pa-reporting-period" class="step">
+                <div class="module-content pa-reports-box clearfix">
+                  <div class="pa-report-selection">
+                    <h2 class="no-border blue">Select reporting period</h2> <br />
+                    <div class="panel bordered">
+                      <div class="date-picker"> <label>From:</label> <input type="text" class="date-range" name="date-range" id="date-from" readonly/> <label>to:</label> <input type="text" class="date-range" name="date-range" id="date-to" readonly/> <a href="#old-reports" class="old-reports">Looking for reports before 2012?</a> </div>
+                      <!-- END of date-picker -->
+                      <div class="panel dark alert-icon" data-id="#old-reports">
+                        <h3>Currently, we can only offer online usage reports from January 2012</h3>
+                        <p>If you would like to see earlier usage data, please email us at emailaddress@sseairtricity.com. When emailing us, be sure to include your:</p>
+                        <ul>
+                          <li>Company name and contact information</li>
+                          <li>Account number</li>
+                          <li>MPRN / GPRN</li>
+                          <li>The type of report you would like to generate</li>
+                          <li>Start and end date for the report</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.pa-report-selection -->
+                </div>
+                <!-- /.module-content pa-reports-box clearfix -->
+              </div>
+              <!-- END REPORTING PERIOD  -->
+              <!-- START Account or segment for reports -->
+              <div id="pa-segments-tab-content" class="step">
+                <div class="module-content pa-reports-box clearfix">
+                  <!-- /.pa-report-summary -->
+                  <div class="pa-report-selection">
+                    <!-- <div class="info-callout">
+                                                <h2 class="no-border blue ">Choose accounts or segments for reports</h2>
+                                                <p></p>
+                                            </div>
+                                            <ul class="clearfix pa-tabs pa-inner-tabs">
+                                                <li id="pa-accounts-tab" class="current"><a href="#accounts-content">Accounts</a></li>
+                                                <li id="pa-segments-tab"><a href="#segments-content">Segments</a></li>
+                                            </ul>
+                                            <div class="panel dark alert-icon" data-id="#info-box">
+                                                <h3></h3>
+                                            <ul>
+                                            </div> -->
+                    <div class="info-callout">
+                      <h2 class="no-border blue ">Choose accounts or segments for reports</h2>
+                      <p></p>
+                    </div>
+                    <div class="panel dark alert-icon" data-id="#info-box">
+                      <h3></h3>
+                      <ul>
+                    </div>
+                    <ul class="clearfix pa-tabs pa-inner-tabs">
+                      <li id="pa-accounts-tab" class="current"><a href="#accounts-content">Accounts</a></li>
+                      <li id="pa-segments-tab"><a href="#segments-content">Segments</a></li>
+                    </ul>
+                    <!-- START TAB CONTENT -->
+                    <div class="module-content pa-inner-tab-content pa-tab-content clearfix" id="accounts-content">
+                      <p class="pa-inner-tab-intro">Select the accounts you wish to use. Accounts can be used for Billing, Usage, Reports &amp; Meter reading. They are based on your SSE Airtricity account setup.</p>
+                      <div class="pa-dynamic-table">
+                        <!-- MASTER ACCOUNT -->
+                        <div id="super-group-id">
+                          <table class="cbd-report-selects">
+                            <tr>
+                              <td><input type="radio" name="cbd-select" value="interval"> Select all Interval premises</td>
+                              <td><input type="radio" name="cbd-select" value="non-interval">Select all Non-Interval premises </td>
+                              <td><input type="radio" name="cbd-select" value="none"> Unselect all</td>
+                            </tr>
+                          </table>
+                          <table>
+                            <colgroup>
+                              <col class="col-8">
+                              <col class="col-4"> </colgroup>
+                            <tbody>
+                              <tr class="pa-dt-master-account-level">
+                                <td class="pa-dt-account-details"><a class="pa-dt-toggle" href="#">Toggle</a>
+                                  <div class="pa-admin-account-details">
+                                    <h4>Master Account</h4>
+                                  </div>
+                                  <p>2 Group accounts,&nbsp;11 accounts</p>
+                                </td>
+                                <td class="align-right"><a href="#" class="select-all master">Select all</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- GROUP ACCOUNT -->
+                          <div id="156300" data-owner="super-group-id" data-account-level="group" class="pa-row-closed" style="display: none;">
+                            <table>
+                              <colgroup>
+                                <col class="col-8">
+                                <col class="col-4"> </colgroup>
+                              <tbody>
+                                <tr class="pa-dt-group-account-level">
+                                  <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a>
+                                    <h4>Accounts By Local Authority</h4>
+                                    <p>5 accounts</p>
+                                  </td>
+                                  <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all group">Select all in this group account</a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- ACCOUNT -->
+                            <div id="1560068" class="pa-mprn-summary-container pa-row-closed" data-owner="156300" data-account-level="account" style="display: none;">
+                              <table>
+                                <colgroup>
+                                  <col>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-6">
+                                  <col class="col-4"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-account-level">
+                                    <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a> </td>
+                                    <td>
+                                      <h4>Account:</h4>
+                                    </td>
+                                    <td>
+                                      <h4><span>1560068</span></h4>
+                                    </td>
+                                    <td>
+                                      <h4>TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</h4>
+                                    </td>
+                                    <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all premises">Select all premises</a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- MPRN -->
+                              <div id="1560068-premise" class="pa-mprn-summary" data-owner="1560068" data-account-level="mprn" style="display: none;">
+                                <table class="stripe">
+                                  <colgroup>
+                                    <col class="col-1">
+                                    <col class="col-1">
+                                    <col class="col-2">
+                                    <col class="col-6">
+                                    <col class="col-3"> </colgroup>
+                                  <tbody>
+                                    <tr class="pa-dt-mprn-level interval">
+                                      <td><input type="checkbox" value="1" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10303447069</td>
+                                      <td class="odd-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level non-interval">
+                                      <td><input type="checkbox" value="2" /></td>
+                                      <td>MPRN</td>
+                                      <td>10302091947</td>
+                                      <td>TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level non-interval">
+                                      <td><input type="checkbox" value="3" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10022297876</td>
+                                      <td class="odd-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level interval">
+                                      <td><input type="checkbox" value="4" /></td>
+                                      <td>MPRN</td>
+                                      <td>10012190622</td>
+                                      <td>TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level interval">
+                                      <td><input type="checkbox" value="5" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10305588324</td>
+                                      <td class="odd-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);"></td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">MPRN</td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">10302490987</td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- END ACCOUNT -->
+                            </div>
+                            <!-- ACCOUNT -->
+                            <div id="1560509" class="pa-mprn-summary-container pa-row-closed" data-owner="156300" data-account-level="account" style="display: none;">
+                              <table>
+                                <colgroup>
+                                  <col>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-6">
+                                  <col class="col-4"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-account-level">
+                                    <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a> </td>
+                                    <td>
+                                      <h4>Account:</h4>
+                                    </td>
+                                    <td>
+                                      <h4><span>1560509</span></h4>
+                                    </td>
+                                    <td>
+                                      <h4>ULOCUT050,PO Box 900,Webworks, Eglington Street,CORK</h4>
+                                    </td>
+                                    <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all premises">Select all premises</a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- MPRN -->
+                              <div id="1560509-premise" class="pa-mprn-summary" data-owner="1560509" data-account-level="mprn" style="display: none;">
+                                <table class="stripe">
+                                  <colgroup>
+                                    <col class="col-1">
+                                    <col class="col-1">
+                                    <col class="col-2">
+                                    <col class="col-6">
+                                    <col class="col-3"> </colgroup>
+                                  <tbody>
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10000069740</td>
+                                      <td class="odd-row">ULOCUT050,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10000070666</td>
+                                      <td>ULOCUT050,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10009924727</td>
+                                      <td class="odd-row">ULOCUT050,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10304494518</td>
+                                      <td>ULOCUT050,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">MPRN</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">10000069776</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">ULOCUT050,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- END ACCOUNT -->
+                            </div>
+                            <!-- ACCOUNT -->
+                            <div id="1551739" class="pa-mprn-summary-container pa-row-closed" data-owner="156300" data-account-level="account" style="display: none;">
+                              <table>
+                                <colgroup>
+                                  <col>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-6">
+                                  <col class="col-4"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-account-level">
+                                    <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a> </td>
+                                    <td>
+                                      <h4>Account:</h4>
+                                    </td>
+                                    <td>
+                                      <h4><span>1551739</span></h4>
+                                    </td>
+                                    <td>
+                                      <h4>HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</h4>
+                                    </td>
+                                    <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all premises">Select all premises</a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- MPRN -->
+                              <div id="1551739-premise" class="pa-mprn-summary" data-owner="1551739" data-account-level="mprn" style="display: none;">
+                                <table class="stripe">
+                                  <colgroup>
+                                    <col class="col-1">
+                                    <col class="col-1">
+                                    <col class="col-2">
+                                    <col class="col-6">
+                                    <col class="col-3"> </colgroup>
+                                  <tbody>
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10020620750</td>
+                                      <td>HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10005964722</td>
+                                      <td class="odd-row">HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10005976913</td>
+                                      <td>HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10005933291</td>
+                                      <td class="odd-row">HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">MPRN</td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">10005996769</td>
+                                      <td style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">HMGCUT173,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- END ACCOUNT -->
+                            </div>
+                            <!-- ACCOUNT -->
+                            <div id="1551753" class="pa-mprn-summary-container pa-row-closed" data-owner="156300" data-account-level="account" style="display: none;">
+                              <table>
+                                <colgroup>
+                                  <col>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-6">
+                                  <col class="col-4"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-account-level">
+                                    <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a> </td>
+                                    <td>
+                                      <h4>Account:</h4>
+                                    </td>
+                                    <td>
+                                      <h4><span>1551753</span></h4>
+                                    </td>
+                                    <td>
+                                      <h4>HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</h4>
+                                    </td>
+                                    <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all premises">Select all premises</a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- MPRN -->
+                              <div id="1551753-premise" class="pa-mprn-summary" data-owner="1551753" data-account-level="mprn" style="display: none;">
+                                <table class="stripe">
+                                  <colgroup>
+                                    <col class="col-1">
+                                    <col class="col-1">
+                                    <col class="col-2">
+                                    <col class="col-6">
+                                    <col class="col-3"> </colgroup>
+                                  <tbody>
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10009312252</td>
+                                      <td class="odd-row">HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10301403504</td>
+                                      <td>HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10009095031</td>
+                                      <td class="odd-row">HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10009120518</td>
+                                      <td>HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10009311721</td>
+                                      <td class="odd-row">HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10009194538</td>
+                                      <td>HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">MPRN</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">10009264752</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">HMUCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- END ACCOUNT -->
+                            </div>
+                            <!-- ACCOUNT -->
+                            <div id="1551754" class="pa-mprn-summary-container pa-row-closed" data-owner="156300" data-account-level="account" style="display: none;">
+                              <table>
+                                <colgroup>
+                                  <col>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-6">
+                                  <col class="col-4"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-account-level">
+                                    <td class="pa-dt-account-details"> <a class="pa-dt-toggle" href="#">Toggle</a> </td>
+                                    <td>
+                                      <h4>Account:</h4>
+                                    </td>
+                                    <td>
+                                      <h4><span>1551754</span></h4>
+                                    </td>
+                                    <td>
+                                      <h4>HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</h4>
+                                    </td>
+                                    <td class="pa-admin-action-col last align-right"> <a href="#" class="select-all premises">Select all premises</a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- MPRN -->
+                              <div id="1551754-premise" class="pa-mprn-summary" data-owner="1551754" data-account-level="mprn" style="display: none;">
+                                <table class="stripe">
+                                  <colgroup>
+                                    <col class="col-1">
+                                    <col class="col-1">
+                                    <col class="col-2">
+                                    <col class="col-6">
+                                    <col class="col-3"> </colgroup>
+                                  <tbody>
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10013818247</td>
+                                      <td>HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10305289112</td>
+                                      <td class="odd-row">HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10301989943</td>
+                                      <td>HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row">MPRN</td>
+                                      <td class="odd-row">10010326090</td>
+                                      <td class="odd-row">HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td>MPRN</td>
+                                      <td>10302966322</td>
+                                      <td>HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="">Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                    <tr class="pa-dt-mprn-level">
+                                      <td><input type="checkbox" /></td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">MPRN</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">10305527237</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">HMVCUT175,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                      <td class="odd-row" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(211, 211, 211);">Non-Interval</td>
+                                    </tr>
+                                    <!-- END MPRN -->
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- END ACCOUNT -->
+                            </div>
+                          </div>
+                          <!-- END GROUP ACCOUNT -->
+                          <!-- GROUP ACCOUNT -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.module-content.clearfix #electricity-content -->
+                    <!-- END TAB CONTENT -->
+                    <!-- START TAB CONTENT -->
+                    <div class="module-content pa-inner-tab-content pa-tab-content clearfix pa-dynamic-table" id="segments-content">
+                      <p class="pa-inner-tab-intro">Segments can be used for Usage &amp; Reports, but not for Billing or Meter reading. They reflect your company's organisation, which can be different to your SSE Airtricity account setup. Your administrator can create and edit segments.</p>
+                      <table class="cbd-report-selects">
+                        <tr>
+                          <td><input type="radio" name="cbd-select" value="interval"> Select all Interval premises</td>
+                          <td><input type="radio" name="cbd-select" value="non-interval">Select all Non-Interval premises </td>
+                          <td><input type="radio" name="cbd-select" value="none"> Unselect all</td>
+                        </tr>
+                      </table>
+                      <div id="156300" class="pa-row-open">
+                        <table>
+                          <colgroup>
+                            <col class="col-8">
+                            <col class="col-4"> </colgroup>
+                          <tbody>
+                            <tr class="pa-dt-master-account-level">
+                              <td class="pa-dt-account-details"> <a class="pa-dt-toggle  pa-dt-toggle-active" href="#">Toggle</a>
+                                <h4>Master Account</h4>
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="997454" class="pa-mprn-summary-container pa-row-closed pa-row-open" data-account-level="account" data-owner="156300" style="display: block;">
+                          <table>
+                            <colgroup>
+                              <col class="col-8">
+                              <col class="col-4"> </colgroup>
+                            <tbody>
+                              <tr class="pa-dt-group-account-level">
+                                <td class="pa-dt-account-details"> <a class="pa-dt-toggle  pa-dt-toggle-active" href="#">Toggle</a>
+                                  <h4 class="account-name">Segment Name</h4>
+                                  <p>4 Premises from 3 Groups</p>
+                                </td>
+                                <td class="premises-admin align-right odd-row"> <a href="#" class="unselect-segment">Unselect</a> <a class="btn btn-medium use-segment" href="#"><span>Use segment</span></a> </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div id="997454-premises" class="pa-mprn-summary" data-account-level="mprn" data-owner="997454" style="display: block;">
+                            <table class="stripe">
+                              <colgroup>
+                                <col class="premises-col-type">
+                                <col class="premises-col-mprn">
+                                <col class="premises-col-address">
+                                <col class="premises-col-interval">
+                                <col class="premises-col-actions"> </colgroup>
+                              <tbody>
+                                <tr class="pa-dt-mprn-level" data-premises-id="58785">
+                                  <td><input type="checkbox" value="58785" /></td>
+                                  <td class="meter-type even-row">MPRN</td>
+                                  <td class="meter-number even-row">91322734486</td>
+                                  <td class="address even-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                  <td class="interval even-row">interval</td>
+                                </tr>
+                                <tr class="pa-dt-mprn-level" data-premises-id="14482">
+                                  <td><input type="checkbox" value="14482" /></td>
+                                  <td class="meter-type odd-row">MPRN</td>
+                                  <td class="meter-number odd-row">35628404515</td>
+                                  <td class="address odd-row">Some realllllllly long, random address, can go here</td>
+                                  <td class="interval odd-row">interval</td>
+                                </tr>
+                                <tr class="pa-dt-mprn-level" data-premises-id="4240">
+                                  <td><input type="checkbox" value="4240" /></td>
+                                  <td class="meter-type even-row">MPRN</td>
+                                  <td class="meter-number even-row">24980224296</td>
+                                  <td class="address even-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                  <td class="interval even-row">interval</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="756564" class="pa-mprn-summary-container pa-row-closed pa-row-open" data-account-level="account" data-owner="156300" style="display: block;">
+                        <table>
+                          <colgroup>
+                            <col class="col-8">
+                            <col class="col-4"> </colgroup>
+                          <tbody>
+                            <tr class="pa-dt-group-account-level">
+                              <td class="pa-dt-account-details"> <a class="pa-dt-toggle  pa-dt-toggle-active" href="#">Toggle</a>
+                                <h4 class="account-name">Segment Name</h4>
+                                <p>4 Premises from 3 Groups</p>
+                              </td>
+                              <td class="premises-admin align-right odd-row"> <a href="#" class="unselect-segment">Unselect</a> <a class="btn btn-medium use-segment" href="#"><span>Use segment</span></a> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="756564-premises" class="pa-mprn-summary" data-account-level="mprn" data-owner="756564" style="display: block;">
+                          <table class="stripe">
+                            <colgroup>
+                              <col class="premises-col-type">
+                              <col class="premises-col-mprn">
+                              <col class="premises-col-address">
+                              <col class="premises-col-interval">
+                              <col class="premises-col-actions"> </colgroup>
+                            <tbody>
+                              <tr class="pa-dt-mprn-level" data-premises-id="58785">
+                                <td><input type="checkbox" value="58785" /></td>
+                                <td class="meter-type even-row">MPRN</td>
+                                <td class="meter-number even-row">91322734486</td>
+                                <td class="address even-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                <td class="interval even-row">interval</td>
+                              </tr>
+                              <tr class="pa-dt-mprn-level" data-premises-id="14482">
+                                <td><input type="checkbox" value="14482" /></td>
+                                <td class="meter-type odd-row">MPRN</td>
+                                <td class="meter-number odd-row">35628404515</td>
+                                <td class="address odd-row">Some realllllllly long, random address, can go here</td>
+                                <td class="interval odd-row">interval</td>
+                              </tr>
+                              <tr class="pa-dt-mprn-level" data-premises-id="4240">
+                                <td><input type="checkbox" value="4240" /></td>
+                                <td class="meter-type even-row">MPRN</td>
+                                <td class="meter-number even-row">24980224296</td>
+                                <td class="address even-row">TUPCUT006,PO Box 900,Webworks, Eglington Street,Cork</td>
+                                <td class="interval even-row">interval</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END TAB CONTENT -->
+                  </div>
+                  <!-- /.pa-report-selection -->
+                  <div class="panel bordered no-border-top summary no-margin-top">
+                    <h3 class="blue number-selected"></h3> <button class="btn btn-report-usage" type="submit">
+                                                <span>Generate report</span>
+                                            </button>
+                    <div class="report-error-tooltip hide"> <span></span> <a href="#" class="close">x</a>
+                      <h3 class="header">It is not possible to create a report containing this many premises.</h3>
+                      <p class="subtext">You can proceed by selecting fewer premises.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.module-content pa-reports-box clearfix -->
+              <!-- END Account or segment for reports  -->
+              <!-- START FORM SUBMIT -->
+              <!-- /.row no-dots clearfix submit -->
+              <div class="module-content clearfix">
+                <h2 class="no-border blue">Questions about creating usage reports?</h2>
+                <div id="accordion_content"> <a class="head" href="#">How do I create a report?</a>
+                  <div style="display: none;">
+                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eu lacus eget pharetra. Ut hendrerit volutpat cursus. Proin in felis dictum, pretium mauris eget, vehicula nisl. In elementum neque felis, in sollicitudin nisi consectetur sed. Integer vitae fringilla augue. Nam venenatis urna nec viverra volutpat. Integer sagittis fermentum urna nec congue. Sed varius elit eu nibh aliquet iaculis.</p>
+                  </div> <a class="head" href="#">Why can't I select days when creating a Consumption or Cost Breakdown report?</a>
+                  <div style="display: none;">
+                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eu lacus eget pharetra. Ut hendrerit volutpat cursus. Proin in felis dictum, pretium mauris eget, vehicula nisl. In elementum neque felis, in sollicitudin nisi consectetur sed. Integer vitae fringilla augue. Nam venenatis urna nec viverra volutpat. Integer sagittis fermentum urna nec congue. Sed varius elit eu nibh aliquet iaculis.</p>
+                  </div> <a class="head" href="#">Why can't I select non-interval accounts when creating a Maximum Import Capacity report?</a>
+                  <div style="display: none;">
+                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eu lacus eget pharetra. Ut hendrerit volutpat cursus. Proin in felis dictum, pretium mauris eget, vehicula nisl. In elementum neque felis, in sollicitudin nisi consectetur sed. Integer vitae fringilla augue. Nam venenatis urna nec viverra volutpat. Integer sagittis fermentum urna nec congue. Sed varius elit eu nibh aliquet iaculis.</p>
+                  </div> <a class="head" href="#">Why can't I select both Interval and Non-interval accounts when creating a Cost Breakdown report?</a>
+                  <div style="display: none;">
+                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis eu lacus eget pharetra. Ut hendrerit volutpat cursus. Proin in felis dictum, pretium mauris eget, vehicula nisl. In elementum neque felis, in sollicitudin nisi consectetur sed. Integer vitae fringilla augue. Nam venenatis urna nec viverra volutpat. Integer sagittis fermentum urna nec congue. Sed varius elit eu nibh aliquet iaculis.</p>
+                  </div>
+                </div>
+                <p class="align-center">Still have questions? <a href="#" class="arrow">Try our Help Centre</a></p>
+              </div>
+            </div>
+            <div class="module" id="tooltip-module">
+              <div class="module-content clearfix">
+                <div id="CONSUMPTION-tooltip">
+                  <p>Report displaying consumption based on most up to date readings.</p>
+                </div>
+              </div>
+            </div>
+            <div class="module" id="tooltip-module">
+              <div class="module-content clearfix">
+                <div id="MAXIMUMIMPORTCAPACITY-tooltip">
+                  <p>Information on MIC data. Please select a maximum of one premises when generating the report as MIC is stored at a premises level.</p>
+                </div>
+              </div>
+            </div>
+            <div class="module" id="tooltip-module">
+              <div class="module-content clearfix">
+                <div id="TARIFF-tooltip">
+                  <p>Information on invoiced consumption and cost.</p>
+                </div>
+              </div>
+            </div>
+            <!-- /#right-column -->
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <p>SSE Airtricity is a trading name of SSE Airtricity Limited which is a member of the SSE Group. The Registered Office of SSE Airtricity Limited is SSE Airtricity, Red Oak South, South County Business Park, Leopardstown, Dublin 18, Ireland. Registered in the Republic of Ireland No. 317386.</p>
+        <p>&copy; SSE Airtricity 2014 Copyright Notice</p>
+        <ul class="footer-links">
+          <li> <a href="http://www.airtricity.com/ie/privacy-policy/" target="_blank">Privacy Policy</a> </li>
+          <li> <a href="#" target="_blank">Cookies</a> </li>
+          <li> <a href="http://www.airtricity.com/ie/terms-of-use/" target="_blank">Terms of Use</a> </li>
+        </ul>
+        <ul class="social-links">
+          <li> <a href="#" target="_blank"><i class="icon icon-twitter"></i></a> </li>
+          <li> <a href="#" target="_blank"><i class="icon icon-facebook"></i></a> </li>
+          <li> <a href="#" target="_blank"><i class="icon icon-tv"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>

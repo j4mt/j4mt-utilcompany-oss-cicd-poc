@@ -1,0 +1,1 @@
+spring-boot:run to run with maven from the command line

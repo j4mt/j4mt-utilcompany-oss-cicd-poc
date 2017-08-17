@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <title> Airtricity - OSS Main Dashboard </title>
+    <!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+    <script type="text/javascript">
+    var JQ_ROOT_DIR = "";
+    </script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min-1.2.6.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.6.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min-1.5.14.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.pwdMeter.js"></script>
+    <script type="text/javascript" src="js/document.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/oss.js"></script>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7_style.css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <style>
+      #kbsearchlink {
+      float: right;
+      vertical-align: bottom;
+      margin-top: 28px;
+      }
+    </style>
+    <![endif]-->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4334107-1']);
+    _gaq.push(['_setDomainName', '.airtricity.com']);
+    _gaq.push(['_setAllowHash', false]);
+    _gaq.push(['_trackPageview']);
+    (function()
+    {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </head>
+
+  <body id="account-information">
+    <div class="m-header-2017  -business" data-js-module="header2017">
+      <div class="header-container">
+        <div class="my-account"> <a href="#"><i class="my-account-icon"><!-- my-account icon --></i></a> </div>
+        <div class="header">
+          <ul class="change-user-type">
+            <li><a href="#">At home</a></li>
+            <li><a href="#" class="selected">For business</a></li>
+          </ul>
+          <div class="change-user-region">
+            <!-- Input Select Component -->
+            <div class="c-input-select -dark-bg -small -no-margin -no-padding -business -small-chevron" data-js-component="inputSelect">
+              <!-- Hidden but exists for accessibility --><label for="header-country">Republic of Ireland</label>
+              <div class="select-input-container"> <select name="name" id="header-country" tabindex="0" class="cs-select cs-skin-border" data-value-preset="">
+            
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/ie/home" selected>Republic of Ireland</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/uk/home" >Northern Ireland Electricity</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="http://www.airtricitygasni.com/at-home/" >Northern Ireland Gas</option>
+
+            
+        </select> </div>
+            </div>
+            <!-- End Input Select Component -->
+          </div> <a class="contact-us" href="#">Contact us</a> <a class="log-out" href="#">Log out</a> </div>
+        <div class="content"> <a href="" class="logo"></a>
+          <ul class="navigation">
+            <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">Products &amp; Services</a>
+              <ul class="sub-menu">
+                <li><a href="business-energy-small.html">Small Business (&euro;1-10k)</a></li>
+                <li><a href="business-energy-medium.html">Medium Business (&euro;10-200k)</a></li>
+                <li><a href="business-energy-large.html">Large Business (&euro;200k-unlimited)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">About us</a>
+              <ul class="sub-menu">
+                <li><a href="business-energy-small.html">About us</a></li>
+                <li><a href="business-energy-medium.html">Energy tips</a></li>
+                <li><a href="business-energy-large.html">Energy sources</a></li>
+              </ul>
+            </li>
+            <li class="is-active"><a href="#" class="my-account-icon">My account</a></li>
+            <li><a href="#" class="search-icon" data-modal-target="search">Search</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main center clearfix">
+      <div class="container clearfix">
+        <div class="left-nav">
+          <h3><a href="main-dashboard.htm">Account Overview</a></h3>
+          <ul>
+            <li><a href="billing-overview.htm">Billing</a></li>
+            <!-- TODO: Need to provide appropriate role -->
+            <li><a href="meter-reading-dashboard.htm">Meter Readings</a></li>
+            <li><a href="account-information.htm" class="current">Account details</a></li>
+          </ul>
+        </div>
+        <script>
+        </script>
+        <div id="right-column">
+          <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+          <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+          <script>
+          $(document).ready(function()
+          {
+            $(".inline").colorbox(
+            {
+              inline: true,
+              width: "556px"
+            });
+          });
+          </script>
+          <div id="information-banner" class="purse-bg"> <a id="close-banner" href="account-information.htm?hideBanner">Don't show this message again</a>
+            <div class="content">
+              <h2>Want to take the guesswork out of bills?</h2>
+              <h3>Sign up to our Budget Plan and you'll pay the same amount every month, even in winter.</h3> <a class="btn btn-cta" href="epp-opt-in.htm?fromBanner">
+<span>Learn more</span>
+</a> </div>
+          </div>
+          <h1>Account details</h1>
+          <div class="module">
+            <div class="module-content clearfix">
+              <h2>Account number</h2>
+              <div class="row last-row acct-number clearfix">
+                <div class="description">
+                  <p>SSE Airtricity account number:</p>
+                </div>
+                <div class="info">
+                  <p>936877</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form name="savePersonalDetails" action="save-personal-details.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div id="personalSave" class="module">
+              <div class="module-content clearfix"> <a class="change btn btn-small" href="#" style="display: block;"><span>Change</span></a><a class="cancel-change" href="#" onclick="resetPersonalDetails()">Cancel</a>
+                <h2>Personal Details</h2>
+                <div class="row clearfix personal-details-addr">
+                  <div class="description">
+                    <p> <strong> HXSCUT877</strong> | 4 KEEKILL COTTAGES, HEADFORD, CO. GALWAY, ROI , HEADFORD, CO. GALWAY, ROI. </p>
+                  </div>
+                </div>
+                <div class="display-details">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Work phone:</p>
+                    </div>
+                    <div class="info">
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Home phone:</p>
+                    </div>
+                    <div class="info">
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Fax number:</p>
+                    </div>
+                    <div class="info">
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details">
+                  <p class="lowlight" id="security-warning">For security reasons, your name and address can't be updated online</p>
+                  <div class="row clearfix"> <label for="workPhone">Work phone:</label> <input id="workPhoneNumberOrig" name="personalDetailsVO.workPhoneNumberOrig" type="hidden" value="" /> <input id="workPhoneNumber" name="personalDetailsVO.workPhoneNumber" type="text" value="" maxlength="15" /> </div>
+                  <div class="row clearfix"> <label for="homePhone">Home phone:</label> <input id="homePhoneNumberOrig" name="personalDetailsVO.homePhoneNumberOrig" type="hidden" value="" /> <input id="homePhoneNumber" name="personalDetailsVO.homePhoneNumber" type="text" value="" maxlength="15" /> </div>
+                  <div class="row clearfix"> <label for="faxNumber">Fax number:</label> <input id="faxNumberOrig" name="personalDetailsVO.faxNumberOrig" type="hidden" value="" /> <input id="faxNumber" name="personalDetailsVO.faxNumber" type="text" value="" maxlength="15" /> </div>
+                  <div class="row clearfix submit"> <button class="btn btn-small" name="submitPersonal" id="submitPersonal" onclick="disableButtonAndDoSubmit(this, document.savePersonalDetails);">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetPersonalDetails()">cancel</a></div>
+                  </div>
+                </div>
+                <div class="moving-house">
+                  <p>Moving House?</p>
+                  <p><a href="move-out-options.htm">Transfer your account to a new address or close your account</a></p>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form id="password-form" name="myAirtricityDetails" action="save-myairtricity-details.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div id="myAirtricity" class="module">
+              <div class="module-content clearfix"> <a href="#" class="change btn btn-small"><span>Change</span></a><a class="cancel-change" href="#" onclick="resetMyAirtricityDetails()">Cancel</a>
+                <h2>My SSE Airtricity details</h2>
+                <div class="display-details">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Username:</p>
+                    </div>
+                    <div class="info">
+                      <p>AIR936877</p>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Password:</p>
+                    </div>
+                    <div class="info">
+                      <p>*********</p>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p>Email address:</p>
+                    </div>
+                    <div class="info">
+                      <p>HXS@airtricity.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details">
+                  <div class="row clearfix"> <label for="workPhone">Username:</label> <input id="usernameOrig" name="myAirtricityDetailsVO.usernameOrig" type="hidden" value="AIR936877" /> <input id="username" name="myAirtricityDetailsVO.username" type="text" value="AIR936877" maxlength="60" autocomplete="off" /> <input id="myAirtricityDetailsVO.oldUsername" name="myAirtricityDetailsVO.oldUsername" autocomplete="off" type="hidden" value="AIR936877" />
+                    <div class="input-help"> It's OK to use your email address. </div>
+                  </div>
+                  <div class="row password-row clearfix">
+                    <div class="fieldset-heading">Password:</div> <label for="currentPassword">Current password:</label> <input id="currentPassword" name="myAirtricityDetailsVO.currentPassword" type="password" value="" maxlength="15" autocomplete="off" />
+                    <div class="clearfix"></div> <label for="newPassword">New password:</label> <input id="newPassword" name="myAirtricityDetailsVO.newPassword" type="password" value="" maxlength="15" autocomplete="off" />
+                    <div id="pwdMeter" class=""></div>
+                    <div class="input-help"> Minimum of 8 characters </div>
+                    <div class="clearfix"></div> <label for="retypenewPassword">Retype new password:</label> <input id="newPasswordConfirmation" name="myAirtricityDetailsVO.newPasswordConfirmation" type="password" value="" maxlength="15" autocomplete="off" /> </div>
+                  <div class="row clearfix"> <label for="detailsEmailAddres">Email address:</label> <input id="customerEmailAddressOrig" name="myAirtricityDetailsVO.customerEmailAddressOrig" type="hidden" value="HXS@airtricity.com" /> <input id="customerEmailAddress" name="myAirtricityDetailsVO.customerEmailAddress" type="text" value="HXS@airtricity.com" maxlength="60" autocomplete="off" />
+                    <p class="notification">If you forget your username or password - we'll send a reset email to this address.</p>
+                  </div>
+                  <div class="row clearfix submit"> <button class="btn btn-small" name="submitmyAirtricity" id="submitmyAirtricity" onclick="disableButtonAndDoSubmit(this, document.myAirtricityDetails);">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetMyAirtricityDetails()">cancel</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form name="eBilling" action="save-ebilling-details.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div id="eBillingPanel" class="module">
+              <div class="module-content clearfix"> <a href="#" class="change btn btn-small"><span>Change</span></a><a class="cancel-change" href="#" onclick="resetEBilling()">Cancel</a>
+                <h2>eBilling</h2>
+                <div class="display-details">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p class="tick-icon">eBilling notification email:</p>
+                    </div>
+                    <div class="info">
+                      <p> HXS@airtricity.com </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details">
+                  <div class="row clearfix radio-row">
+                    <p><strong>Sign up to eBilling</strong></p>
+                    <p class="lowlight">Instead of receiving your SSE Airtricity bill by post, we will send you an email notifying you when your bill is ready to view online. To receive the best SSE Airtricity discounts you need to be signed up for eBilling. <a href="http://www.sseairtricity.com/ie/home/products/older-and-standard-tariffs/" target="_blank">
+Learn more about eBilling discounts
+</a> </p>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="eBillingSubscribedOrig" name="electronicBillingDetailsVO.electronicBillingSubscribedOrig" type="hidden" value="true" /> <input id="eBillingNo" name="electronicBillingDetailsVO.electronicBillingSubscribed" type="radio" value="false" /> <label for="eBillingNo">No</label> </div>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="eBillingYes" name="electronicBillingDetailsVO.electronicBillingSubscribed" type="radio" value="true" checked="checked" /> <label for="eBillingYes">Yes</label> </div>
+                    <div id="">
+                      <div class="clearfix" id="eBillingEmailRow"> <label for="eBillingEmail">Email Address:</label> <input id="eBillingEmailOrig" name="electronicBillingDetailsVO.electronicBillingEmailAddressOrig" type="hidden" value="HXS@airtricity.com" /> <input id="eBillingEmail" name="electronicBillingDetailsVO.electronicBillingEmailAddress" type="text" value="HXS@airtricity.com" maxlength="60" /> </div>
+                    </div>
+                  </div>
+                  <div class="row clearfix submit"> <button class="btn btn-small" name="submitEBilling" id="submitEBilling">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetEBilling()">cancel</a></div>
+                  </div>
+                </div>
+                <p class="notification">To receive the best SSE Airtricity discounts - sign up to eBilling.</p>
+              </div>
+            </div>
+            <!-- Lightbox -->
+            <div class="colourbox-inline-container">
+              <div id="confirm_cancel" style='padding:10px; background:#fff;'>
+                <h1>Are you sure you want to cancel eBilling?</h1>
+                <p> As a Budget Plan customer you need to be signed up to eBilling. </p>
+                <p> If you opt out of eBilling: </p>
+                <ul>
+                  <li> You will lose your eBilling discounts </li>
+                  <li> You will go off Budget Plan and go back to receiving normal bills every two months </li>
+                </ul>
+                <div class="overlay-buttons clearfix">
+                  <div class="left-button"> <a id="opt-out-anyway-button" class="rollover" href="#"><span>Opt out anyway</span></a>
+                    <p> I understand I will lose my eBilling discounts and will be taken off Budget Plan </p>
+                  </div>
+                  <div class="right-button"> <a id="remain-signed-up-button" class="rollover" href="#"><span>Remain signed up to eBilling</span></a> </div>
+                  <div class="clear">&nbsp;</div>
+                </div>
+                <!-- /.overlay-buttons -->
+              </div>
+              <!-- /#confirm_cancel -->
+            </div>
+            <!-- End of Lightbox -->
+          </form>
+          <form id="billingNotification" name="billingNotification" action="save-billing-notification.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div id="billingNotification" class="module">
+              <div class="module-content clearfix"> <a href="#" class="change btn btn-small"><span>Change</span></a><a class="cancel-change" href="#" onclick="resetBillingNotification()">Cancel</a>
+                <h2>Billing notification</h2>
+                <div class="display-details">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p class="tick-icon">Billing notification email:</p>
+                    </div>
+                    <div class="info">
+                      <p> HXS@airtricity.com </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details">
+                  <p><strong>Sign up for Billing notification email</strong></p>
+                  <p class="lowlight">To receive an email notification every time a new bill is ready to view online, sign up for billing notifications</p>
+                  <div class="row clearfix radio-row">
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="billingNotificationSubscribedOrig" name="billingNotificationVO.billingNotificationSubscribedOrig" type="hidden" value="true" /> <input id="BillingNotNo" name="billingNotificationVO.billingNotificationSubscribed" type="radio" value="false" /> <label for="BillingNotNo">No</label> </div>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="BillingNotYes" name="billingNotificationVO.billingNotificationSubscribed" type="radio" value="true" checked="checked" /> <label for="BillingNotYes">Yes</label> </div>
+                    <div class="clearfix" id="billNotEmailRow"> <label for="BillingNotEmail">Email Address:</label> <input id="BillingNotEmailOrig" name="billingNotificationVO.billingNotificationEmailAddressOrig" type="hidden" value="HXS@airtricity.com" /> <input id="BillingNotEmail" name="billingNotificationVO.billingNotificationEmailAddress" type="text" value="HXS@airtricity.com" maxlength="60" /> </div>
+                  </div>
+                  <div class="row clearfix submit"> <button class="btn btn-small" name="submitBillNot" id="submitBillNot" onclick="disableButtonAndDoSubmit(this, document.billingNotification);">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetBillingNotification()">cancel</a></div>
+                  </div>
+                </div>
+                <p class="notification" id="billing-text">When a new bill is ready to view online we'll send an email to this address.</p>
+              </div>
+            </div>
+          </form>
+          <form name="meterReadReminder" action="save-meter-reminder.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div id="meterReadingRemindersPanel" class="module"> <a name="meterReadingRemindersPanel"></a>
+              <div class="module-content clearfix"> <a class="change btn btn-small" href="#" style="display: block;"><span>Change</span></a> <a class="cancel-change" href="#" style="display: none;" onclick="resetMeterReadingReminders()">Cancel</a>
+                <h2>Meter reading reminders</h2>
+                <div class="display-details" style="display: ;">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p class="tick-icon" /> SMS: </div>
+                    <div class="info">
+                      <p> 0876843663 </p>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p class="tick-icon" /> Email: </div>
+                    <div class="info">
+                      <p> HXSCUT877@airtricity.com </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details" style="display: ;">
+                  <div class="row clearfix radio-row odd-row">
+                    <p class="radio-desc"><strong>Send reminder by SMS
+(mobile text message)</strong></p>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="meterReadingReminderSmsSubscribedOrig" name="meterReadingReminderVO.meterReadingReminderSmsSubscribedOrig" type="hidden" value="true" /> <input id="meterSMSNo" name="meterReadingReminderVO.meterReadingReminderSmsSubscribed" class="radio" type="radio" value="false" /> <label for="meterSMSNo">No</label></div>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"><input id="meterSMSYes" name="meterReadingReminderVO.meterReadingReminderSmsSubscribed" class="radio" type="radio" value="true" checked="checked" /> <label for="meterSMSYes">Yes</label></div>
+                    <div class="clearfix" id="meterSMSRow"><label for="meterSMSMobile">Mobile
+Number:</label> <input id="meterSMSMobileOrig" name="meterReadingReminderVO.meterReadingReminderSmsPhoneNumberOrig" type="hidden" value="0876843663" /> <input id="meterSMSMobile" name="meterReadingReminderVO.meterReadingReminderSmsPhoneNumber" type="text" value="0876843663" size="30" maxlength="15" />
+                      <div class="input-help">For example:0871234567</div>
+                    </div>
+                  </div>
+                  <div class="row clearfix radio-row">
+                    <p class="radio-desc"><strong>Send reminder by email</strong></p>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="meterReadingReminderEmailSubscribedOrig" name="meterReadingReminderVO.meterReadingReminderEmailSubscribedOrig" type="hidden" value="true" /> <input id="meterEmailNo" name="meterReadingReminderVO.meterReadingReminderEmailSubscribed" class="radio" type="radio" value="false" /> <label for="meterEmailNo">No</label> </div>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"><input id="meterEmailYes" name="meterReadingReminderVO.meterReadingReminderEmailSubscribed" class="radio" type="radio" value="true" checked="checked" /> <label for="meterEmailYes">Yes</label> </div>
+                    <div class="row clearfix" id="meterEmailRow"><label for="meterEmailAddress">Email Address:</label> <input id="meterEmailAddressOrig" name="meterReadingReminderVO.meterReadingReminderEmailAddressOrig" type="hidden" value="HXSCUT877@airtricity.com" /> <input id="meterEmailAddress" name="meterReadingReminderVO.meterReadingReminderEmailAddress" type="text" value="HXSCUT877@airtricity.com" maxlength="60" /> </div>
+                  </div>
+                  <div class="row clearfix submit odd-row"> <button class="btn btn-small" name="submitMeter" id="submitMeter" onclick="disableButtonAndDoSubmit(this, document.meterReadReminder);">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetMeterReadingReminders()">cancel</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="module">
+            <div class="module-content clearfix">
+              <h2>Payment method</h2>
+              <div class="row clearfix payment-method">
+                <div class="description">
+                  <p class="tick-icon">Direct debit:</p>
+                </div>
+                <div class="info">
+                  <p>Signed up</p>
+                </div>
+                <div class="customer-care">
+                  <p><a href="http://www.sseairtricity.com/ie/home/help-centre-ie/paying-your-bill/">Learn more about your payment options</a></p>
+                </div>
+                <p class="lowlight"><br/><br/>Your account is debited on the <br/> 10th of every bill month.</p>
+              </div>
+              <ul class="account-module-list">
+                <li>You can also make intermediate payments at any time, to help better manage your outgoings</li>
+                <li>For example, you could set up a standing order for &euro;10 a week. When your bill arrives, we'll deduct the outstanding amount from Direct Debit</li>
+              </ul>
+              <div class="notifcation">
+                <p class="rounded-blue-box" id="payment-method-info-box">As a direct debit customer you're eligible for our <span class="blue">Budget Plan</span>. By paying the same amount every month - taking the guesswork and hassle out of bills. <a href="epp-opt-in.htm">Learn more</a> </p>
+              </div>
+            </div>
+          </div>
+          <form name="marketingDetails" action="save-marketing-details.htm" method="post"><input type="hidden" name="_method" /> <input type="hidden" name="synchronizerToken" value="14098499187501733416618290855233" />
+            <div class="module">
+              <div class="module-content clearfix"> <a href="#" class="change btn btn-small"><span>Change</span></a><a class="cancel-change" href="#" onclick="resetMarketingDetails()">Cancel</a>
+                <h2>Marketing communications</h2>
+                <div class="display-details">
+                  <div class="row clearfix">
+                    <div class="description">
+                      <p class="tick-icon">Marketing communications:</p>
+                    </div>
+                    <div class="info">
+                      <p>Signed up</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-details">
+                  <p><strong>Sign up to receive marketing communications</strong></p>
+                  <p class="lowlight">Are you happy for us to contact you about promotional offers and updates on new products and services.</p>
+                  <div class="row clearfix radio-row">
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="marketingInformationSubscribedOrig" name="marketingInformationVO.marketingInformationSubscribedOrig" type="hidden" value="true" /> <input id="marketingNo" name="marketingInformationVO.marketingInformationSubscribed" type="radio" value="false" /> <label for="marketingNo">No</label> </div>
+                    <div class="description">&nbsp;</div>
+                    <div class="info"> <input id="marketingYes" name="marketingInformationVO.marketingInformationSubscribed" type="radio" value="true" checked="checked" /> <label for="marketingYes">Yes</label> </div>
+                  </div>
+                  <div class="row clearfix submit"> <button class="btn btn-small" name="submitMarketing" id="submitMarketing" onclick="disableButtonAndDoSubmit(this, document.marketingDetails);">Save</button>
+                    <div class="cancel">or <a href="#" onclick="resetMarketingDetails()">cancel</a></div>
+                  </div>
+                </div>
+                <p class="notification">Sign up to receive updates about promotional offers and other products and services from SSE Airtricity</p>
+              </div>
+            </div>
+          </form>
+          <div class="module">
+            <div class="module-content clearfix">
+              <h2>Supply address details</h2>
+              <div class="display-details">
+                <div class="row clearfix address-row last-row">
+                  <div class="description">
+                    <p><strong>Details:</strong></p>
+                    <p>KEELKILL HEADFORD, CO GALWAY, CO. GALWAY</p>
+                    <p>MPRN: <strong>10010962456</strong></p>
+                    <!-- <p>Premises number: <strong>702645</strong></p>-->
+                  </div>
+                  <div class="info">
+                    <p class="title">Electricity Services</p>
+                    <p><img src="img/tick.png" alt="electricity services" class="" /></p>
+                  </div>
+                  <div class="info">
+                    <p class="title">Gas Services</p>
+                    <p><img src="img/cross.png" alt="gas services" /></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+          <!--
+          if (false)
+          {
+            document.getElementById('personalSave').scrollIntoView();
+          }
+          else if (false)
+          {
+            document.getElementById('myAirtricity').scrollIntoView();
+          }
+          else if (false)
+          {
+            document.getElementById('eBilling').scrollIntoView();
+          }
+          else if (false)
+          {
+            document.getElementById('billingNotification').scrollIntoView();
+          }
+          else if (false)
+          {
+            document.getElementById('meterReadingRemindersPanel').scrollIntoView();
+          }
+          //-->
+          </script>
+          <div class="lightbox-content">
+            <div id="delete-card-notice">
+              <div class="notice">
+                <p>Are you sure you want to delete this card from your account?</p>
+              </div>
+              <p class="cta"> <a href="deleteCardInfo.htm" class="delete-btn rollover"><span>Yes - Delete</span></a> <span class="cancel">or <a href="#" class="close-notice">Cancel</a></span> </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <p>SSE Airtricity is a trading name of SSE Airtricity Limited which is a member of the SSE Group. The Registered Office of SSE Airtricity Limited is SSE Airtricity, Red Oak South, South County Business Park, Leopardstown, Dublin 18, Ireland. Registered in the Republic of Ireland No. 317386.</p>
+          <p>&copy; SSE Airtricity 2014 Copyright Notice</p>
+          <ul class="footer-links">
+            <li> <a href="http://www.airtricity.com/ie/privacy-policy/" target="_blank">Privacy Policy</a> </li>
+            <li> <a href="#" target="_blank">Cookies</a> </li>
+            <li> <a href="http://www.airtricity.com/ie/terms-of-use/" target="_blank">Terms of Use</a> </li>
+          </ul>
+          <ul class="social-links">
+            <li> <a href="#" target="_blank"><i class="icon icon-twitter"></i></a> </li>
+            <li> <a href="#" target="_blank"><i class="icon icon-facebook"></i></a> </li>
+            <li> <a href="#" target="_blank"><i class="icon icon-tv"></i></a> </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+
+</html>

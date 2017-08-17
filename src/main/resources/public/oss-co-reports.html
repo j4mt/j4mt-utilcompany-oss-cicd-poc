@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="no-js js-enabled" lang="en">
+
+  <head>
+    <title> Airtricity - OSS Main Dashboard </title>
+    <!--[if lt IE 9]>
+                                    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+    <script type="text/javascript">
+    var JQ_ROOT_DIR = "";
+    </script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min-1.2.6.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min-1.5.14.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/document.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/reports.js"></script>
+    <script type="text/javascript" src="js/oss.js"></script>
+  </head>
+
+  <body id="co-reports" class="commercial ">
+    <div class="page-wrap">
+      <div id="cboxOverlay" style="display: none;"></div>
+      <div id="colorbox" class="" style="padding-bottom: 42px; padding-right: 42px; display: none;">
+        <div id="cboxWrapper" style="">
+          <div style="">
+            <div id="cboxTopLeft" style="float: left;"></div>
+            <div id="cboxTopCenter" style="float: left;"></div>
+            <div id="cboxTopRight" style="float: left;"></div>
+          </div>
+          <div style="clear: left;">
+            <div id="cboxMiddleLeft" style="float: left;"></div>
+            <div id="cboxContent" style="float: left;">
+              <div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden;"></div>
+              <div id="cboxLoadingOverlay" class="" style=""></div>
+              <div id="cboxLoadingGraphic" class="" style=""></div>
+              <div id="cboxTitle" class="" style=""></div>
+              <div id="cboxCurrent" class="" style=""></div>
+              <div id="cboxNext" class="" style=""></div>
+              <div id="cboxPrevious" class="" style=""></div>
+              <div id="cboxSlideshow" class="" style=""></div>
+              <div id="cboxClose" class="" style=""></div>
+            </div>
+            <div id="cboxMiddleRight" style="float: left;"></div>
+          </div>
+          <div style="clear: left;">
+            <div id="cboxBottomLeft" style="float: left;"></div>
+            <div id="cboxBottomCenter" style="float: left;"></div>
+            <div id="cboxBottomRight" style="float: left;"></div>
+          </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+      </div>
+      <div id="cboxOverlay" style="display: none;"></div>
+      <div id="colorbox" class="" style="padding-bottom: 42px; padding-right: 42px; display: none;">
+        <div id="cboxWrapper" style="">
+          <div style="">
+            <div id="cboxTopLeft" style="float: left;"></div>
+            <div id="cboxTopCenter" style="float: left;"></div>
+            <div id="cboxTopRight" style="float: left;"></div>
+          </div>
+          <div style="clear: left;">
+            <div id="cboxMiddleLeft" style="float: left;"></div>
+            <div id="cboxContent" style="float: left;">
+              <div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden;"></div>
+              <div id="cboxLoadingOverlay" class="" style=""></div>
+              <div id="cboxLoadingGraphic" class="" style=""></div>
+              <div id="cboxTitle" class="" style=""></div>
+              <div id="cboxCurrent" class="" style=""></div>
+              <div id="cboxNext" class="" style=""></div>
+              <div id="cboxPrevious" class="" style=""></div>
+              <div id="cboxSlideshow" class="" style=""></div>
+              <div id="cboxClose" class="" style=""></div>
+            </div>
+            <div id="cboxMiddleRight" style="float: left;"></div>
+          </div>
+          <div style="clear: left;">
+            <div id="cboxBottomLeft" style="float: left;"></div>
+            <div id="cboxBottomCenter" style="float: left;"></div>
+            <div id="cboxBottomRight" style="float: left;"></div>
+          </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+      </div>
+      <div class="m-header-2017  -business" data-js-module="header2017">
+        <div class="header-container">
+          <div class="my-account"> <a href="#"><i class="my-account-icon"><!-- my-account icon --></i></a> </div>
+          <div class="header">
+            <ul class="change-user-type">
+              <li><a href="#">At home</a></li>
+              <li><a href="#" class="selected">For business</a></li>
+            </ul>
+            <div class="change-user-region">
+              <!-- Input Select Component -->
+              <div class="c-input-select -dark-bg -small -no-margin -no-padding -business -small-chevron" data-js-component="inputSelect">
+                <!-- Hidden but exists for accessibility --><label for="header-country">Republic of Ireland</label>
+                <div class="select-input-container"> <select name="name" id="header-country" tabindex="0" class="cs-select cs-skin-border" data-value-preset="">
+            
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/ie/home" selected>Republic of Ireland</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="https://www.sseairtricity.com/uk/home" >Northern Ireland Electricity</option>
+
+            
+            
+                
+                <option  
+                data-region="" value="http://www.airtricitygasni.com/at-home/" >Northern Ireland Gas</option>
+
+            
+        </select> </div>
+              </div>
+              <!-- End Input Select Component -->
+            </div> <a class="contact-us" href="#">Contact us</a> <a class="log-out" href="#">Log out</a> </div>
+          <div class="content"> <a href="" class="logo"></a>
+            <ul class="navigation">
+              <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">Products &amp; Services</a>
+                <ul class="sub-menu">
+                  <li><a href="business-energy-small.html">Small Business (&euro;1-10k)</a></li>
+                  <li><a href="business-energy-medium.html">Medium Business (&euro;10-200k)</a></li>
+                  <li><a href="business-energy-large.html">Large Business (&euro;200k-unlimited)</a></li>
+                </ul>
+              </li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Help</a></li>
+              <li class="nav-with-sub-menu"> <a href="#" class="sub-menu-trigger">About us</a>
+                <ul class="sub-menu">
+                  <li><a href="business-energy-small.html">About us</a></li>
+                  <li><a href="business-energy-medium.html">Energy tips</a></li>
+                  <li><a href="business-energy-large.html">Energy sources</a></li>
+                </ul>
+              </li>
+              <li class="is-active"><a href="#" class="my-account-icon">My account</a></li>
+              <li><a href="#" class="search-icon" data-modal-target="search">Search</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main center clearfix">
+        <div class="container clearfix">
+          <div class="left-nav">
+            <h3> <a href="main-dashboard.htm">Account Overview</a> </h3>
+            <ul>
+              <li> <a href="billing-overview.htm">Billing</a> </li>
+              <li> <a class="current" href="/oss_web/oss-co-reports.htm">Usage Reports</a> </li>
+              <li> <a href="/oss_web/oss-co-csv-reports.htm">Data Export</a> </li>
+              <li> <a href="meter-reading-dashboard.htm">Meter Readings</a> </li>
+              <li> <a href="account-information.htm">Account details</a> </li>
+            </ul>
+          </div>
+          <div id="right-column">
+            <form id="goReportForm" method="post" action="/oss_web/oss-co-reports.htm">
+              <h1>Usage Reports</h1>
+              <div class="clearfix module">
+                <div id="pa-choose-report-types" class="step">
+                  <div class="module-content pa-reports-box clearfix">
+                    <div class="pa-report-selection">
+                      <h2>Create your report</h2>
+                      <h4>What type of report would you like to run?</h4>
+                      <table class="stripe">
+                        <colgroup>
+                          <col width="32%">
+                          <col width="68%"> </colgroup>
+                        <thead>
+                          <tr>
+                            <th style="text-align:left;">Select report type</th>
+                            <th class="align-right" style="text-align:left;">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="row-selected">
+                            <td> <input id="CONSUMPTION" class="reportType" type="radio" value="CONSUMPTION" name="reportType"> <label for="CONSUMPTION">Consumption</label> <a class="toolTip after" href="#CONSUMPTION-tooltip"></a> </td>
+                            <td class="align-right">Consolidated report of your energy usage</td>
+                          </tr>
+                          <tr class="">
+                            <td class="odd-row"> <input id="MAXIMUMIMPORTCAPACITY" class="reportType" type="radio" value="MAXIMUMIMPORTCAPACITY" name="reportType"> <label for="MAXIMUMIMPORTCAPACITY">Maximum Import Capacity</label> <a class="toolTip after" href="#MAXIMUMIMPORTCAPACITY-tooltip"></a> </td>
+                            <td class="odd-row align-right">Maximum Import Capacity Information on MPRN displaying any breaches and excess</td>
+                          </tr>
+                          <tr class="">
+                            <td style="border-bottom: 1px solid rgb(211, 211, 211);"> <input id="TARIFF" class="reportType" type="radio" value="TARIFF" name="reportType"> <label for="TARIFF">Cost Breakdown</label> <a class="toolTip after" href="#TARIFF-tooltip"></a> </td>
+                            <td class="align-right" style="border-bottom: 1px solid rgb(211, 211, 211);">Detailed breakdown of total cost and consumption information</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div id="pa-reporting-period" class="step" style="display: block;">
+                  <div class="module-content pa-reports-box clearfix">
+                    <div class="pa-report-selection">
+                      <h2 class="no-border blue">Select reporting period</h2> <br>
+                      <div class="panel bordered">
+                        <div class="date-picker"> <label>From:</label> <input id="date-from" class="date-range hasDatepicker" type="text" value="10/03/2015" name="date-range"> <label>to:</label> <input id="date-to" class="date-range hasDatepicker" type="text" value="10/04/2015" name="date-range"> <a class="old-reports" href="#old-reports">Looking for reports before 2012?</a> </div>
+                        <div class="panel dark alert-icon" data-id="#old-reports">
+                          <h3>Currently, we can only offer online usage reports from January 2012</h3>
+                          <p>If you would like to see earlier usage data, please email us at emailaddress@sseairtricity.com. When emailing us, be sure to include your:</p>
+                          <ul>
+                            <li>Company name and contact information</li>
+                            <li>Account number</li>
+                            <li>MPRN / GPRN</li>
+                            <li>The type of report you would like to generate</li>
+                            <li>Start and end date for the report</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="pa-segments-tab-content" class="step" style="display: block;">
+                  <div class="module-content pa-reports-box clearfix">
+                    <div class="pa-report-summary">
+                      <h2>Premises for reports</h2>
+                      <div class="pa-reports-step-data"> </div>
+                      <p class="align-right"> <a class="pa-open-report-selection" href="#">Choose premises for reports</a> </p>
+                    </div>
+                    <div class="pa-report-selection">
+                      <h2 class="no-border">Choose premises for reports</h2>
+                      <div id="accounts-content" class="module-content pa-inner-tab-content pa-tab-content clearfix" style="display: block;">
+                        <p class="pa-inner-tab-intro">Select the premises you wish to use. The premises are based on your SSE Airtricity account setup.</p>
+                        <div class="pa-dynamic-table">
+                          <div id="account" class="pa-mprn-summary-container pa-row-closed pa-row-open" data-account-level="master">
+                            <table>
+                              <colgroup>
+                                <col>
+                                <col class="col-1">
+                                <col class="col-1">
+                                <col class="col-6">
+                                <col class="col-4"> </colgroup>
+                              <tbody>
+                                <tr class="pa-dt-account-level">
+                                  <td class="pa-dt-account-details"> <a class="pa-dt-toggle pa-dt-toggle-active" href="#">Toggle</a> </td>
+                                  <td>
+                                    <h4>Account:</h4>
+                                  </td>
+                                  <td>
+                                    <h4> <span>170864</span> </h4>
+                                  </td>
+                                  <td>
+                                    <h4>STRCUT864,O'Hagan House, Monaghan Row,Newry, Co Down</h4>
+                                  </td>
+                                  <td class="pa-admin-action-col last align-right"> <a class="select-all premises" href="#" style="display: inline;">Select all premises</a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div id="170864-premise" class="pa-mprn-summary" style="display: block;" data-account-level="mprn" data-owner="account">
+                              <table class="stripe">
+                                <colgroup>
+                                  <col class="col-1">
+                                  <col class="col-1">
+                                  <col class="col-2">
+                                  <col class="col-6">
+                                  <col class="col-3"> </colgroup>
+                                <tbody>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable row-selected">
+                                    <td class="odd-row"> <input type="checkbox" value="982574" name=""> </td>
+                                    <td class="odd-row">MPRN</td>
+                                    <td class="odd-row">81441731547</td>
+                                    <td class="odd-row">FESTIVE LIGHTING - ADJ TO 2 THE SQUARE CAMLOUGH CO. DOWN</td>
+                                    <td class="odd-row">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable row-selected">
+                                    <td> <input type="checkbox" value="847334" name=""> </td>
+                                    <td>MPRN</td>
+                                    <td>81808892288</td>
+                                    <td>FESTIVE LIGHTING MINI PILLAR MONAGHAN STREET NEWRY CO. DOWN</td>
+                                    <td class="">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td class="odd-row"> <input type="checkbox" value="982572" name=""> </td>
+                                    <td class="odd-row">MPRN</td>
+                                    <td class="odd-row">81359822703</td>
+                                    <td class="odd-row">FESTIVE LIGHTING - ADJ TO 22 THE SQUARE CAMLOUGH CO. DOWN</td>
+                                    <td class="odd-row">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td> <input type="checkbox" value="987471" name=""> </td>
+                                    <td>MPRN</td>
+                                    <td>81688081161</td>
+                                    <td>CAR PARK, CORRY SQUARE LOWER CATHERINE STREET NEWRY CO. DOWN</td>
+                                    <td class="">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td class="odd-row"> <input type="checkbox" value="844922" name=""> </td>
+                                    <td class="odd-row">MPRN</td>
+                                    <td class="odd-row">81124773037</td>
+                                    <td class="odd-row">FESTIVE LIGHTING MINI PILLAR MARCUS SQUARE NEWRY CO. DOWN</td>
+                                    <td class="odd-row">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td> <input type="checkbox" value="844923" name=""> </td>
+                                    <td>MPRN</td>
+                                    <td>81299929338</td>
+                                    <td>FESTIVE LIGHTING MINI PILLAR MONAGHAN STREET NEWRY CO. DOWN</td>
+                                    <td class="">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td class="odd-row"> <input type="checkbox" value="789519" name=""> </td>
+                                    <td class="odd-row">MPRN</td>
+                                    <td class="odd-row">81020013575</td>
+                                    <td class="odd-row">NEW PLAY AREA MARTINS LANE NEWRY CO. DOWN</td>
+                                    <td class="odd-row">Non-Interval</td>
+                                  </tr>
+                                  <tr class="pa-dt-mprn-level non-interval unavailable">
+                                    <td style="border-bottom: 1px solid rgb(211, 211, 211);"> <input type="checkbox" value="45790" name=""> </td>
+                                    <td style="border-bottom: 1px solid rgb(211, 211, 211);">MPRN</td>
+                                    <td style="border-bottom: 1px solid rgb(211, 211, 211);">81675495999</td>
+                                    <td style="border-bottom: 1px solid rgb(211, 211, 211);">The Crane THE HARBOUR ANNALONG CO. DOWN</td>
+                                    <td class="" style="border-bottom: 1px solid rgb(211, 211, 211);">Non-Interval</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel bordered no-border-top summary no-margin-top">
+                      <h3 class="blue number-selected" style="display: inline;">2 unique premises selected</h3> <button class="btn btn-report-usage" type="submit">
+                                        <span>Generate report</span>
+                                        </button>
+                      <div class="report-error-tooltip hide" style="display: none;"> <span></span> <a class="close" href="#">x</a>
+                        <h3 class="header">It is not possible to create a report containing this many premises.</h3>
+                        <p class="subtext">You can proceed by selecting fewer premises. There is a limit of 1000 premises allowed.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tooltip-module" class="module">
+                <div class="module-content clearfix">
+                  <div id="CONSUMPTION-tooltip">
+                    <p>Report displaying consumption based on most up to date readings.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tooltip-module" class="module">
+                <div class="module-content clearfix">
+                  <div id="MAXIMUMIMPORTCAPACITY-tooltip">
+                    <p>Information on MIC data. Please select a maximum of one premises when generating the report as MIC is stored at a premises level.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tooltip-module" class="module">
+                <div class="module-content clearfix">
+                  <div id="TARIFF-tooltip">
+                    <p>Information on invoiced consumption and cost.</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="module">
+              <div class="module-content clearfix">
+                <h2 class="no-border">Top 5 FAQs</h2>
+                <div id="accordion_content"> </div>
+                <p> <a href="http://www.sseairtricity.com/uk/business/help-centre/business-online/">View all Usage Report FAQ's</a> </p>
+              </div>
+            </div>
+          </div>
+          <div id="feedback-container">
+            <ul class="tabs">
+              <li> <a id="show-feedback" href="javascript:void(0);">
+                            <span>How is your experience with SSE Airtricity's online self-service?</span>
+                            </a> </li>
+            </ul>
+            <div class="full-module module feedback">
+              <div class="module-content">
+                <div class="feedback-form">
+                  <form>
+                    <div class="panel">
+                      <h4 class="satisfied">How satisfied are you with SSE Airtricity's online self-service?</h4>
+                      <div class="slider-container">
+                        <ul class="slider">
+                          <li> <a href="javascript:void(0)">
+                                                    <span>0</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>1</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>2</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>3</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>4</span>
+                                                    </a> </li>
+                          <li class="active"> <a href="javascript:void(0)">
+                                                    <span>5</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>6</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>7</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>8</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>9</span>
+                                                    </a> </li>
+                          <li class="last"> <a href="javascript:void(0)">
+                                                    <span>10</span>
+                                                    </a> </li>
+                        </ul>
+                        <div class="l-desc">
+                          <p>Not at all</p>
+                        </div>
+                        <div class="c-desc">
+                          <p>Neutral</p>
+                        </div>
+                        <div class="r-desc">
+                          <p>Very satisfied</p>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div> <input id="satisfied" type="hidden" value="5" name="satisfied"> </div>
+                    <div class="panel">
+                      <h4 class="recommend">How likely are you to recommend SSE Airtricity's online self-service to a friend?</h4>
+                      <div class="slider-container">
+                        <ul class="slider">
+                          <li> <a href="javascript:void(0)">
+                                                    <span>0</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>1</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>2</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>3</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>4</span>
+                                                    </a> </li>
+                          <li class="active"> <a href="javascript:void(0)">
+                                                    <span>5</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>6</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>7</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>8</span>
+                                                    </a> </li>
+                          <li> <a href="javascript:void(0)">
+                                                    <span>9</span>
+                                                    </a> </li>
+                          <li class="last"> <a href="javascript:void(0)">
+                                                    <span>10</span>
+                                                    </a> </li>
+                        </ul>
+                        <div class="l-desc">
+                          <p>Not likely</p>
+                        </div>
+                        <div class="c-desc">
+                          <p>Neutral</p>
+                        </div>
+                        <div class="r-desc">
+                          <p>Very likely</p>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div> <input id="recommend" type="hidden" value="5" name="recommend"> </div>
+                    <div class="panel">
+                      <h4 class="comments">What can we do to improve SSE Airtricity's online self-service?</h4> <textarea id="comments" placeholder="Tell us here" name="comments"></textarea> </div> <button id="submit-feedback" class="btn btn-submit" type="submit">Send</button> </form>
+                </div>
+                <div class="submit-success"> <a class="close" href="javascript:void(0);">Close this box</a>
+                  <div class="panel">
+                    <h4>Thank You</h4>
+                    <p>We have received your feedback and will use it to improve our service.</p>
+                    <p> If you would like to contact us, our <a href="http://www.sseairtricity.com/uk/business/help-centre/contact-us">Customer Support Team</a> will be happy to help. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+        <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"> <a class="ui-datepicker-prev ui-corner-all" title="Prev" data-event="click" data-handler="prev">
+                <span class="ui-icon ui-icon-circle-triangle-w">Prev</span>
+                </a>
+          <div class="ui-datepicker-title"> <select class="ui-datepicker-month" data-event="change" data-handler="selectMonth">
+                        <option value="0">Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">Mar</option>
+                        <option selected="selected" value="3">Apr</option>
+                    </select> <select class="ui-datepicker-year" data-event="change" data-handler="selectYear">
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option selected="selected" value="2015">2015</option>
+                    </select> </div>
+        </div>
+        <table class="ui-datepicker-calendar">
+          <thead>
+            <tr>
+              <th class="ui-datepicker-week-end"> <span title="Sunday">Su</span> </th>
+              <th> <span title="Monday">Mo</span> </th>
+              <th> <span title="Tuesday">Tu</span> </th>
+              <th> <span title="Wednesday">We</span> </th>
+              <th> <span title="Thursday">Th</span> </th>
+              <th> <span title="Friday">Fr</span> </th>
+              <th class="ui-datepicker-week-end"> <span title="Saturday">Sa</span> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td>
+              <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td>
+              <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">1</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">2</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">3</a> </td>
+              <td class=" ui-datepicker-week-end " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">4</a> </td>
+            </tr>
+            <tr>
+              <td class=" ui-datepicker-week-end " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">5</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">6</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">7</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">8</a> </td>
+              <td class=" " data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default" href="#">9</a> </td>
+              <td class=" ui-datepicker-days-cell-over ui-datepicker-current-day ui-datepicker-today" data-year="2015" data-month="3" data-event="click" data-handler="selectDay"> <a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">10</a> </td>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">11</span> </td>
+            </tr>
+            <tr>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">12</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">13</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">14</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">15</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">16</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">17</span> </td>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">18</span> </td>
+            </tr>
+            <tr>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">19</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">20</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">21</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">22</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">23</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">24</span> </td>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">25</span> </td>
+            </tr>
+            <tr>
+              <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">26</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">27</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">28</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">29</span> </td>
+              <td class=" ui-datepicker-unselectable ui-state-disabled "> <span class="ui-state-default">30</span> </td>
+              <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td>
+              <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="ui-datepicker-buttonpane ui-widget-content"> <button class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" data-event="click" data-handler="today" type="button">Today</button> <button class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" data-event="click" data-handler="hide" type="button">Done</button> </div>
+      </div>
+      <div class="m-footer-2017  ">
+        <div class="content">
+          <div class="inner">
+            <div class="col1">
+              <h3>About</h3>
+              <p class="about-sse">SSE Airtricity is a trading name of SSE Airtricity Limited which is a member of the SSE Group. The Registered Office of SSE Airtricity Limited is SSE Airtricity, Red Oak South, South County Business Park, Leopardstown, Dublin 18, Ireland. Registered in the Republic of Ireland No. 317386.</p>
+              <p>&copy; SSE Airtricity 2017</p>
+            </div>
+            <div class="col2">
+              <h3>Information</h3>
+              <ul class="info-links">
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Customer charter</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+            <div class="col3">
+              <h3>Connect</h3>
+              <div class="c-social-connect "> <a href="https://www.facebook.com/sseairtricity" target="_blank" class="facebook-icon" title="SSE Airtricity on Facebook"></a> <a href="https://twitter.com/sseairtricity" target="_blank" class="twitter-icon" title="SSE Airtricity on Twitter"></a> <a href="https://www.youtube.com/c/Sseairtricity" target="_blank" class="youtube-icon" title="SSE Airtricity on Youtube"></a> </div>
+            </div>
+            <div class="col4">
+              <p>If you smell gas you should contact Gas Networks Ireland immediately on <strong class="no-wrap">1850 20 50 50^</strong> (24 hours). <br><br>^Charged at LoCall rate. Rates from landline and mobile companies may vary so please check with your operator.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end page-wrap -->
+    <div class="c-modal-overlay -search-modal is-hidden -bg-blue -no-hr" data-js-component="modalOverlay" data-overlay-name="search">
+      <div class="header">
+        <a href="" class="js-close-modal icon-x-white" title="Close" data-tap-class="has-tap">
+          <!-- X to close -->
+        </a>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h3 class="title"> Search </h3>
+          <!-- Text input component -->
+          <div class="c-input-search -bg-blue -no-hr">
+            <form action="search-page" method="get"> <button type="submit" name="search"></button>
+              <div class="search-input-wrap"> <input type="text" placeholder="Search" name="q" id="q" /> </div>
+            </form>
+          </div>
+          <!-- End Text input component -->
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="inner"> </div>
+      </div>
+    </div>
+  </body>
+  </body>
+
+</html>
