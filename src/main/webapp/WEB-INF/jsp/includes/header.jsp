@@ -39,19 +39,19 @@
 
 
                             <option
-                                    data-region="" value="https://www.sseairtricity.com/ie/home" selected>Republic of
+                                    data-region="" value="" selected>Republic of
                                 Ireland
                             </option>
 
 
                             <option
-                                    data-region="" value="https://www.sseairtricity.com/uk/home">Northern Ireland
+                                    data-region="" value="">Northern Ireland
                                 Electricity
                             </option>
 
 
                             <option
-                                    data-region="" value="http://www.airtricitygasni.com/at-home/">Northern Ireland Gas
+                                    data-region="" value="">Northern Ireland Gas
                             </option>
 
 
@@ -60,7 +60,9 @@
                     <!-- End Input Select Component -->
                 </div>
                 <a class="contact-us" href="#">Contact us</a> <a class="log-out" href="#">Log out</a></div>
-            <div class="content"><a href="" class="logo"></a>
+            <div class="content">
+            <!-- do not display branding -->
+            <!--<a href="" class="logo"></a>-->
                 <ul class="navigation">
                     <li class="nav-with-sub-menu"><a href="#" class="sub-menu-trigger">Products &amp; Services</a>
                         <ul class="sub-menu">
@@ -95,7 +97,7 @@
 <%--<span class="icon-bar"></span>--%>
 <%--<span class="icon-bar"></span>--%>
 <%--</button>--%>
-<%--<a class="navbar-brand" href="#">SSE Airtriciy</a>--%>
+<%--<a class="navbar-brand" href="#">J4mt Util Inc</a>--%>
 <%--</div>--%>
 <%----%>
 <%--<!-- Collect the nav links, forms, and other content for toggling -->--%>
