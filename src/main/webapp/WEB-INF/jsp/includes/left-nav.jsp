@@ -12,6 +12,7 @@
             <li><a href="billing-overview.htm">Billing</a></li>
             <li class="current"><a href="meter-reading-dashboard.htm">Meter Readings</a></li>
             <li><a href="account-information.htm">Account details</a></li>
+            <li><a href="<c:url value='/signup' />"class="glyphicon glyphicon-list-alt">Sign up</a></li>
         </ul>
     </div>
 </div>
