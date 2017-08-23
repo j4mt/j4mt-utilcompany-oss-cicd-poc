@@ -11,7 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.j4mt.oss.entities.User;
+import com.j4mt.oss.model.User;
 
 @Component
 public class MyUtil {

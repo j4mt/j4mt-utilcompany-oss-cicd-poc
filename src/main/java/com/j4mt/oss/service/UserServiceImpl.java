@@ -1,8 +1,8 @@
-package com.j4mt.oss.services;
+package com.j4mt.oss.service;
 
 import javax.mail.MessagingException;
 
-import com.j4mt.oss.repositories.UserRepository;
+import com.j4mt.oss.repository.UserRepository;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -24,8 +24,8 @@ import com.j4mt.oss.dto.ResetPasswordForm;
 import com.j4mt.oss.dto.SignupForm;
 import com.j4mt.oss.dto.UserDetailsImpl;
 import com.j4mt.oss.dto.UserEditForm;
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.entities.User.Role;
+import com.j4mt.oss.model.User;
+import com.j4mt.oss.model.User.Role;
 import com.j4mt.oss.mail.MailSender;
 import com.j4mt.oss.util.MyUtil;
 

@@ -1,4 +1,4 @@
-package com.j4mt.oss.controllers;
+package com.j4mt.oss.web;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.services.UserService;
+import com.j4mt.oss.model.User;
+import com.j4mt.oss.service.UserService;
 
 @Controller
 @RequestMapping("/users")
