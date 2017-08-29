@@ -1,6 +1,5 @@
 package com.j4mt.oss.controllers;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 
 import com.j4mt.oss.dto.ForgotPasswordForm;

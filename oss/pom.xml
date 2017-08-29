@@ -10,6 +10,26 @@
 	<name>j4mt OSS Ultily Platform</name>
 	<description>Spring 4 and Spring Boot demo project</description>
 
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>sqsAutomation-nexus</id>
+			<name>sqsAutomation</name>
+			<url>http://automation.sqs.com:8081/repository/sqsautomation/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven Plugin Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

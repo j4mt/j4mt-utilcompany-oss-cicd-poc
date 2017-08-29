@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sqs</groupId>
+    <artifactId>sqsfw_test</artifactId>
+    <version>1.1.4</version>
+    <packaging>jar</packaging>
+
+    <name>sqs_fw_test</name>
+
+    <prerequisites>
+        <maven>3.1.1</maven>
+    </prerequisites>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>1.5.3</allure.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <resourcesFolder>resources</resourcesFolder>
+        <sqsVersion>1.1.5-SNAPSHOT</sqsVersion>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyy-MM-dd_HH-mm</maven.build.timestamp.format>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>sqsAutomation-nexus</id>
+            <name>sqsAutomation</name>
+            <url>http://automation.sqs.com:8081/repository/sqsautomation/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Plugin Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+
+        <!-- sqs dependencies here, there should only be a need to depend on whichever
+             modules you need active as they all depend on Core -->
+
+        <dependency>
+            <groupId>com.sqs</groupId>
+            <artifactId>sqsfw_web</artifactId>
+            <version>${sqsVersion}</version>
+        </dependency>
+
+        <!-- ReportNG -->
+        <dependency>
+            <groupId>com.sqs</groupId>
+            <artifactId>sqsfw_reportng</artifactId>
+            <version>${sqsVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Guice needs to be here to fix errors -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.1.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Adding guava to solve some issues with browser not starting -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-guice</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${resourcesFolder}</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <!--<plugin>-->
+            <!--<groupId>org.jacoco</groupId>-->
+            <!--<artifactId>jacoco-maven-plugin</artifactId>-->
+            <!--<version>0.7.9</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>pre-unit-test</id>-->
+            <!--<goals>-->
+            <!--<goal>prepare-agent</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+            <!--<propertyName>argLine</propertyName>-->
+            <!--</configuration>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.6</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>7.8.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
+                <configuration>
+                    <properties>
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>false</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>com.sqs.reportng.HtmlReporter</value>
+                            <!-- org.uncommons.reportng.JUnitXMLReporter -->
+                        </property>
+                    </properties>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <reportsDirectory>${testReportDirectory}</reportsDirectory>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-allure-environment</id>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${maven-resources-plugin.outputDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${resourcesFolder}</directory>
+                                    <includes>
+                                        <include>environment.properties</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>write-active-profile-properties</goal>
+                        </goals>
+                        <configuration>
+                            <outputFile>
+                                ${environment.outputFile}
+                            </outputFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.0-M1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>${maven-assembly-plugin.descriptor}</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id> <!-- this is used for inheritance merges -->
+                        <phase>package</phase> <!-- bind to the packaging phase -->
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.8</version>
+                <configuration>
+                    <resultsDirectory>allure-results</resultsDirectory>
+                    <reportDirectory>${allureReportsDir}</reportDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requirePluginVersions>
+                                    <message>Best Practice is to always define plugin versions!</message>
+                                    <banLatest>true</banLatest>
+                                    <banRelease>true</banRelease>
+                                    <banSnapshots>true</banSnapshots>
+                                    <phases>clean,deploy,site</phases>
+                                    <unCheckedPluginList>org.codehaus.mojo:cobertura-maven-plugin</unCheckedPluginList>
+                                </requirePluginVersions>
+                                <bannedDependencies>
+                                    <excludes>
+                                        <exclude>commons-logging</exclude>
+                                        <!-- use slf4j -->
+                                        <exclude>log4j</exclude>
+                                        <!-- use slf4j -->
+                                    </excludes>
+                                </bannedDependencies>
+                                <reactorModuleConvergence>
+                                    <message>The reactor is not valid</message>
+                                    <!--<ignoreModuleDependencies>true</ignoreModuleDependencies>-->
+                                </reactorModuleConvergence>
+                                <dependencyConvergence/>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.8</version>
+                <configuration>
+                    <resultsDirectory>../allure-results</resultsDirectory>
+                    <reportDirectory>${allureReportsDir}</reportDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <show>package</show>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <profiles>
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <!--Base path for resources and reports-->
+                <OSFresourcesFolder>C:\SQS_OSF</OSFresourcesFolder>
+
+                <!--Reports folders-->
+                <testReportDirectory>${OSFresourcesFolder}\Reports\TestReport-${timestamp}</testReportDirectory>
+                <allureReportsDir>${OSFresourcesFolder}\AllureReports</allureReportsDir>
+
+                <!--Timeout-->
+                <Timeout>30</Timeout>
+
+                <!-- Grid settings -->
+                <!--<SeleniumGrid>true</SeleniumGrid>-->
+                <!--<RemoteServerURL>http://msdn-dev-build3.pd.group.intl:4444/wd/hub</RemoteServerURL>-->
+
+                <!-- force download -->
+                <ForceFileDownload>true</ForceFileDownload>
+
+                <DriverPath>${OSFresourcesFolder}\Drivers</DriverPath>
+
+                <!--Screenshot properties -->
+                <FailedScreenshotLocation>${OSFresourcesFolder}\Screenshots\FailedTests</FailedScreenshotLocation>
+                <ScreenshotLocation>${OSFresourcesFolder}\Screenshots\AllScreens</ScreenshotLocation>
+
+                <!-- enable Debug log, defaults to false -->
+                <Debug>true</Debug>
+
+                <!-- enable Trace log, defaults to false -->
+                <Trace>true</Trace>
+
+                <!-- Set headless mode for JBrowserDriver, defaults to true-->
+                <Headless>true</Headless>
+
+                <suiteXmlFile>${resourcesFolder}\TestNGExecuteTests.xml</suiteXmlFile>
+                <argLine>
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                </argLine>
+                <maven-resources-plugin.outputDirectory>${basedir}/target/allure-results
+                </maven-resources-plugin.outputDirectory>
+                <environment.outputFile>${resourcesFolder}/environment.properties</environment.outputFile>
+                <maven-assembly-plugin.descriptor>src/assembly/project.xml</maven-assembly-plugin.descriptor>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>linux</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+            </activation>
+            <properties>
+                <!--Base path for resources and reports-->
+                <OSFresourcesFolder>/home/user/autoq/SQS_OSF</OSFresourcesFolder>
+
+                <!--Reports folders-->
+                <testReportDirectory>${OSFresourcesFolder}/Reports/TestReport-${timestamp}</testReportDirectory>
+                <allureReportsDir>${OSFresourcesFolder}/AllureReports</allureReportsDir>
+
+                <!--Timeout-->
+                <Timeout>30</Timeout>
+
+                <!-- Grid settings -->
+                <SeleniumGrid>true</SeleniumGrid>
+                <RemoteServerURL>http://msdn-dev-build3.pd.group.intl:4444/wd/hub</RemoteServerURL>
+
+                <!-- force download -->
+                <ForceFileDownload>true</ForceFileDownload>
+
+                <DriverPath>${OSFresourcesFolder}/Drivers</DriverPath>
+
+                <!--Screenshot properties -->
+                <FailedScreenshotLocation>${OSFresourcesFolder}/Screenshots/FailedTests</FailedScreenshotLocation>
+                <ScreenshotLocation>${OSFresourcesFolder}/Screenshots/AllScreens</ScreenshotLocation>
+
+                <!-- enable Debug log, defaults to false -->
+                <Debug>true</Debug>
+
+                <!-- enable Trace log, defaults to false -->
+                <Trace>true</Trace>
+
+                <!-- Set headless mode for JBrowserDriver, defaults to true-->
+                <Headless>true</Headless>
+
+
+                <argLine>
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                </argLine>
+                <maven-resources-plugin.outputDirectory>${basedir}/target/allure-results
+                </maven-resources-plugin.outputDirectory>
+                <environment.outputFile>${resourcesFolder}/environment.properties</environment.outputFile>
+                <maven-assembly-plugin.descriptor>src/assembly/project.xml</maven-assembly-plugin.descriptor>
+            </properties>
+        </profile>
+        <profile>
+            <id>cucumber</id>
+            <activation>
+                <property>
+                    <name>useCucumber</name>
+                </property>
+            </activation>
+            <properties>
+                <suiteXmlFile>${resourcesFolder}/TestNGCucumber.xml</suiteXmlFile>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-cucumber-jvm</artifactId>
+                    <version>2.0-BETA16</version>
+                    <exclusions>
+                        <exclusion>
+                            <artifactId>commons-io</artifactId>
+                            <groupId>commons-io</groupId>
+                        </exclusion>
+                        <exclusion>
+                            <artifactId>commons-lang3</artifactId>
+                            <groupId>org.apache.commons</groupId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>com.google.guava</groupId>
+                            <artifactId>guava</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-api</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>noCucumber</id>
+            <activation>
+                <property>
+                    <name>!useCucumber</name>
+                </property>
+            </activation>
+            <properties>
+                <suiteXmlFile>${resourcesFolder}/TestNGExecuteTests.xml</suiteXmlFile>
+            </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-testng</artifactId>
+                    <version>2.0-BETA16</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.testng</groupId>
+                            <artifactId>testng</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>io.qameta.allure</groupId>
+                            <artifactId>allure-java-commons</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                <dependency>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-java-commons</artifactId>
+                    <version>2.0-BETA16</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>com.google.guava</groupId>
+                            <artifactId>guava</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-api</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+</project>
