@@ -1,4 +1,6 @@
-package com.j4mt.oss.entities;
+package com.j4mt.oss.model;
+
+import com.j4mt.oss.util.MyUtil;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,12 +15,10 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-import com.j4mt.oss.util.MyUtil;
-
 @Entity
 @Table(name="usr", indexes = {
-	@Index(columnList = "email", unique=true),
-	@Index(columnList = "forgotPasswordCode", unique=true)
+		@Index(columnList = "email", unique=true),
+		@Index(columnList = "forgotPasswordCode", unique=true)
 })
 public class User {
 	

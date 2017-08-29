@@ -1,16 +1,15 @@
-package com.j4mt.oss.controllers;
+package com.j4mt.oss.web;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 
 import com.j4mt.oss.dto.ForgotPasswordForm;
 import com.j4mt.oss.dto.SignupForm;
 import com.j4mt.oss.mail.MailSender;
-import com.j4mt.oss.services.UserService;
+import com.j4mt.oss.service.UserService;
 import com.j4mt.oss.util.MyUtil;
-import com.j4mt.oss.validators.ForgotPasswordFormValidator;
-import com.j4mt.oss.validators.ResetPasswordFormValidator;
-import com.j4mt.oss.validators.SignupFormValidator;
+import com.j4mt.oss.validator.ForgotPasswordFormValidator;
+import com.j4mt.oss.validator.ResetPasswordFormValidator;
+import com.j4mt.oss.validator.SignupFormValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

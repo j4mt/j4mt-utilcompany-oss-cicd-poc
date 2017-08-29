@@ -7,8 +7,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.entities.User.Role;
+import com.j4mt.oss.model.User;
+import com.j4mt.oss.model.User.Role;
 
 public class UserDetailsImpl implements UserDetails {
 	

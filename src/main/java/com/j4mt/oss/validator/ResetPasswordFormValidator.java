@@ -1,4 +1,4 @@
-package com.j4mt.oss.validators;
+package com.j4mt.oss.validator;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
