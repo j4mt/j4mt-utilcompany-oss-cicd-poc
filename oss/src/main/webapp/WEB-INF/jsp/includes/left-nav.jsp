@@ -13,6 +13,7 @@
             <li><a href="<c:url value='/meter-read' />">Submit Meter Readings</a></li>
             <li><a href="account-information.htm">Account details</a></li>
             <li><a href="<c:url value='/signup' />">Sign up</a></li>
+            <li><a href="<c:url value='/signin' />">Sign in</a></li>
         </ul>
     </div>
 </div>
