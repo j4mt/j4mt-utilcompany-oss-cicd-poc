@@ -1,12 +1,11 @@
 package com.j4mt.oss.dto;
 
-import java.util.Set;
+import com.j4mt.oss.entity.User;
+import com.j4mt.oss.entity.User.Role;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import com.j4mt.oss.entitie.User;
-import com.j4mt.oss.entitie.User.Role;
+import java.util.Set;
 
 public class UserEditForm {
 	

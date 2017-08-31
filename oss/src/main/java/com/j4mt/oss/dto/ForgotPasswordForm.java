@@ -1,10 +1,10 @@
 package com.j4mt.oss.dto;
 
+import com.j4mt.oss.entity.User;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-
-import com.j4mt.oss.entitie.User;
 
 public class ForgotPasswordForm {
 	

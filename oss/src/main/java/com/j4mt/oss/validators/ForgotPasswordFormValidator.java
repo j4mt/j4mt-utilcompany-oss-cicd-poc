@@ -1,13 +1,12 @@
 package com.j4mt.oss.validators;
 
-import com.j4mt.oss.repositorie.UserRepository;
+import com.j4mt.oss.dto.ForgotPasswordForm;
+import com.j4mt.oss.entity.User;
+import com.j4mt.oss.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
-
-import com.j4mt.oss.dto.ForgotPasswordForm;
-import com.j4mt.oss.entitie.User;
 
 @Component
 public class ForgotPasswordFormValidator extends LocalValidatorFactoryBean {

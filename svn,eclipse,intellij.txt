@@ -1,12 +1,5 @@
-/target
 
-/.settings
-
-/.classpath
-
-/.project
-
-.idea/
+# Created by https://www.gitignore.io/api/svn,eclipse,intellij
 
 ### Eclipse ###
 
@@ -61,10 +54,10 @@ local.properties
 .worksheet
 
 ### Eclipse Patch ###
-# Eclipse Core
+# Eclipse Core		
 .project
 
-# JDT-specific (Eclipse Java Development Tools)
+# JDT-specific (Eclipse Java Development Tools)		
 .classpath
 
 ### Intellij ###
@@ -133,4 +126,3 @@ fabric.properties
 .svn/
 
 # End of https://www.gitignore.io/api/svn,eclipse,intellij
-

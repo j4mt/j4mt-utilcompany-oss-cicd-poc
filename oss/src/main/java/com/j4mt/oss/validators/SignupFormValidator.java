@@ -1,14 +1,13 @@
 package com.j4mt.oss.validators;
 
-import javax.annotation.Resource;
-
 import com.j4mt.oss.dto.SignupForm;
-import com.j4mt.oss.repositorie.UserRepository;
+import com.j4mt.oss.entity.User;
+import com.j4mt.oss.repository.UserRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
-import com.j4mt.oss.entitie.User;
+import javax.annotation.Resource;
 
 @Component
 public class SignupFormValidator extends LocalValidatorFactoryBean {

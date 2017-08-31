@@ -1,6 +1,6 @@
 package com.j4mt.oss.dto;
 
-import com.j4mt.oss.entitie.MeterRead;
+import com.j4mt.oss.entity.MeterRead;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;

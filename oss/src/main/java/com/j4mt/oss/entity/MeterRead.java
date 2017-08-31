@@ -1,4 +1,4 @@
-package com.j4mt.oss.entitie;
+package com.j4mt.oss.entity;
 
 import javax.persistence.*;
 

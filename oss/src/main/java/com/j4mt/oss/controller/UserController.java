@@ -1,7 +1,7 @@
 package com.j4mt.oss.controller;
 
 import com.j4mt.oss.dto.UserEditForm;
-import com.j4mt.oss.entitie.User;
+import com.j4mt.oss.entity.User;
 import com.j4mt.oss.service.UserService;
 import com.j4mt.oss.util.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;

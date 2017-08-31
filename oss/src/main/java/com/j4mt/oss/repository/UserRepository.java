@@ -1,8 +1,7 @@
-package com.j4mt.oss.repositorie;
+package com.j4mt.oss.repository;
 
+import com.j4mt.oss.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.j4mt.oss.entitie.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	

@@ -1,8 +1,7 @@
 package com.j4mt.oss.util;
 
-import java.util.Locale;
-
 import com.j4mt.oss.dto.UserDetailsImpl;
+import com.j4mt.oss.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.MessageSource;
@@ -11,7 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.j4mt.oss.entitie.User;
+import java.util.Locale;
 
 @Component
 public class MyUtil {

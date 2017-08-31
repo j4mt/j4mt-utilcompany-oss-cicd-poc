@@ -1,4 +1,4 @@
-package com.j4mt.oss.entitie;
+package com.j4mt.oss.entity;
 
 import com.j4mt.oss.util.MyUtil;
 
@@ -18,8 +18,8 @@ public class User {
 	public static final String EMAIL_PATTERN = "[A-Za-z0-9._%-+]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
 	public static final int RANDOM_CODE_LENGTH = 16;
 	public static final int PASSWORD_MAX = 30;
-	
-	public static enum Role {
+
+	public enum Role {
 		UNVERIFIED, BLOCKED, ADMIN
 	}
 

@@ -1,10 +1,10 @@
 package com.j4mt.oss.service;
 
 import com.j4mt.oss.dto.*;
-import com.j4mt.oss.entitie.User;
-import com.j4mt.oss.entitie.User.Role;
+import com.j4mt.oss.entity.User;
+import com.j4mt.oss.entity.User.Role;
 import com.j4mt.oss.mail.MailSender;
-import com.j4mt.oss.repositorie.UserRepository;
+import com.j4mt.oss.repository.UserRepository;
 import com.j4mt.oss.util.MyUtil;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;

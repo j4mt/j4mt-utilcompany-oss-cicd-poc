@@ -1,7 +1,7 @@
 package com.j4mt.oss.dto;
 
-import com.j4mt.oss.entitie.User;
-import com.j4mt.oss.entitie.User.Role;
+import com.j4mt.oss.entity.User;
+import com.j4mt.oss.entity.User.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
