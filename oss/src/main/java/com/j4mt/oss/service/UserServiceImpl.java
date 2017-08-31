@@ -1,8 +1,11 @@
-package com.j4mt.oss.services;
+package com.j4mt.oss.service;
 
-import javax.mail.MessagingException;
-
-import com.j4mt.oss.repositories.UserRepository;
+import com.j4mt.oss.dto.*;
+import com.j4mt.oss.entitie.User;
+import com.j4mt.oss.entitie.User.Role;
+import com.j4mt.oss.mail.MailSender;
+import com.j4mt.oss.repositorie.UserRepository;
+import com.j4mt.oss.util.MyUtil;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -13,21 +16,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationAdapter;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.validation.BindingResult;
 
-import com.j4mt.oss.dto.ForgotPasswordForm;
-import com.j4mt.oss.dto.ResetPasswordForm;
-import com.j4mt.oss.dto.SignupForm;
-import com.j4mt.oss.dto.UserDetailsImpl;
-import com.j4mt.oss.dto.UserEditForm;
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.entities.User.Role;
-import com.j4mt.oss.mail.MailSender;
-import com.j4mt.oss.util.MyUtil;
+import javax.mail.MessagingException;
 
 @Service
 @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)

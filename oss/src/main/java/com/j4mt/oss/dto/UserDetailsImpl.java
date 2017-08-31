@@ -1,14 +1,13 @@
 package com.j4mt.oss.dto;
 
-import java.util.Collection;
-import java.util.HashSet;
-
+import com.j4mt.oss.entitie.User;
+import com.j4mt.oss.entitie.User.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.entities.User.Role;
+import java.util.Collection;
+import java.util.HashSet;
 
 public class UserDetailsImpl implements UserDetails {
 	

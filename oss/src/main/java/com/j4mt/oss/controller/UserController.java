@@ -1,10 +1,8 @@
-package com.j4mt.oss.controllers;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+package com.j4mt.oss.controller;
 
 import com.j4mt.oss.dto.UserEditForm;
+import com.j4mt.oss.entitie.User;
+import com.j4mt.oss.service.UserService;
 import com.j4mt.oss.util.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.j4mt.oss.entities.User;
-import com.j4mt.oss.services.UserService;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/users")

@@ -1,22 +1,13 @@
-package com.j4mt.oss.entities;
-
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Index;
-import javax.persistence.Table;
+package com.j4mt.oss.entitie;
 
 import com.j4mt.oss.util.MyUtil;
 
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
-@Table(name="usr", indexes = {
+@Table(name="USER", indexes = {
 	@Index(columnList = "email", unique=true),
 	@Index(columnList = "forgotPasswordCode", unique=true)
 })

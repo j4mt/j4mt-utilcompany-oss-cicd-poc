@@ -6,7 +6,7 @@
     </listeners>
 
     <test name="PrestaBestPractice" verbose="4">
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="com.sqs.prestatests.PrestaSignInTest"/>
         </classes>

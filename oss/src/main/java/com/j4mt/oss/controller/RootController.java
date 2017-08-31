@@ -1,11 +1,10 @@
-package com.j4mt.oss.controllers;
-
-import javax.validation.Valid;
+package com.j4mt.oss.controller;
 
 import com.j4mt.oss.dto.ForgotPasswordForm;
+import com.j4mt.oss.dto.ResetPasswordForm;
 import com.j4mt.oss.dto.SignupForm;
 import com.j4mt.oss.mail.MailSender;
-import com.j4mt.oss.services.UserService;
+import com.j4mt.oss.service.UserService;
 import com.j4mt.oss.util.MyUtil;
 import com.j4mt.oss.validators.ForgotPasswordFormValidator;
 import com.j4mt.oss.validators.ResetPasswordFormValidator;
@@ -17,14 +16,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.j4mt.oss.dto.ResetPasswordForm;
+import javax.validation.Valid;
 
 @Controller
 public class RootController {
