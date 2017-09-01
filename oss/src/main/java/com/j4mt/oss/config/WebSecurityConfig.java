@@ -1,7 +1,5 @@
 package com.j4mt.oss.config;
 
-import javax.annotation.Resource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,58 +16,66 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.RememberMeServices;
 import org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices;
 
+import javax.annotation.Resource;
+
 @Configuration
 @EnableWebMvcSecurity
-public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
-	
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
     private static final Logger logger = LoggerFactory.getLogger(WebSecurityConfig.class);
 
-	@Value("${rememberMe.privateKey}")
-	private String rememberMeKey;
-    
+    @Value("${rememberMe.privateKey}")
+    private String rememberMeKey;
+
     @Resource
-	private UserDetailsService userService;
-    
+    private UserDetailsService userService;
+
     @Bean
     public RememberMeServices rememberMeServices() {
-    	
+
         TokenBasedRememberMeServices rememberMeServices = new TokenBasedRememberMeServices(rememberMeKey, userService);
         return rememberMeServices;
-        
+
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-      logger.info("Creating password encoder bean");
-      return new BCryptPasswordEncoder();
+        logger.info("Creating password encoder bean");
+        return new BCryptPasswordEncoder();
     }
 
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            .authorizeRequests()
+                .authorizeRequests()
                 .antMatchers("/",
-                		"/home",
-                		"/error",
-                		"/signup",
-                		"/forgot-password",
-                		"/reset-password/*",
-                		"/public/**",
-                		"/users/*").permitAll()
+                        "/home",
+                        "/error",
+                        "/signup",
+                        "/forgot-password",
+                        "/reset-password/*",
+                        "/public/**",
+                        "/users/*"
+                ).permitAll()
                 .anyRequest().authenticated();
         http
-            .formLogin()
+                .formLogin()
                 .loginPage("/login")
-                .permitAll().and()
-            .rememberMe().key(rememberMeKey).rememberMeServices(rememberMeServices()).and()
-            .logout()
+                .permitAll()
+                .and()
+                .rememberMe()
+                .key(rememberMeKey)
+                .rememberMeServices(rememberMeServices())
+                .and()
+                .logout()
                 .permitAll();
     }
-    
-	@Autowired
+
+    @Autowired
     @Override
     protected void configure(AuthenticationManagerBuilder authManagerBuilder) throws Exception {
+
         authManagerBuilder.userDetailsService(userService).passwordEncoder(passwordEncoder());
     }
 

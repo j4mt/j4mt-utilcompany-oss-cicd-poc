@@ -10,10 +10,10 @@
         <ul>
             <li><a href="main-dashboard.htm">Account Overview</a></li>
             <li><a href="billing-overview.htm">Billing</a></li>
-            <li><a href="<c:url value='/meter-read' />">Submit Meter Readings</a></li>
+            <li><a href="<c:url value='/meterRead' />">Submit Meter Readings</a></li>
             <li><a href="account-information.htm">Account details</a></li>
             <li><a href="<c:url value='/signup' />">Sign up</a></li>
-            <li><a href="<c:url value='/signin' />">Sign in</a></li>
+            <li><a href="<c:url value='/login' />">Sign in</a></li>
         </ul>
     </div>
 </div>

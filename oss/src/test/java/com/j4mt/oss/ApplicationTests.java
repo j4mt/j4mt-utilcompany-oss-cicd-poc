@@ -2,9 +2,11 @@ package com.j4mt.oss;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+
+import static junit.framework.TestCase.assertTrue;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -13,6 +15,8 @@ public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
+
+        assertTrue(true);
+    }
 
 }

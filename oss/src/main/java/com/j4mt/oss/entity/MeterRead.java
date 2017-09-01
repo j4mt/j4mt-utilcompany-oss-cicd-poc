@@ -16,16 +16,28 @@ public class MeterRead {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "USER_ID")
+    private User user;
+
     @Column(nullable = false, length = METER_MAX)
     private String electricRead;
 
     @Column(nullable = false, length = METER_MAX)
     private String gasRead;
 
-    public MeterRead(String electricRead, String gasRead) {
+    public MeterRead(User user, String electricRead, String gasRead) {
+
+        this.user = user;
         this.electricRead = electricRead;
-        this.gasRead = this.gasRead;
+        this.gasRead = gasRead;
     }
+
+
+    //    public MeterRead(String electricRead, String gasRead) {
+//        this.electricRead = electricRead;
+//        this.gasRead = this.gasRead;
+//    }
 
     public long getId() {
         return id;
@@ -33,6 +45,14 @@ public class MeterRead {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getElectricRead() {
