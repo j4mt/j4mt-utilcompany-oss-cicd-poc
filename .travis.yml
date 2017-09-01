@@ -4,7 +4,11 @@ jdk:
 cache:
   directories:
    - $HOME/.m2
-beforescript:
-- cd oss
+
 install:
-- mvn install -Dmaven.javadoc.skip=true -B -V
+- cd oss
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script:
+
+- cd oss
+- mvn test
