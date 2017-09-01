@@ -28,7 +28,7 @@
 						</div>
 					</c:if>
 
-					<form:form role="form" method="post">
+					<form:form modelAttribute="loginForm" role="form">
 
 						<div class="form-group">
 							<label for="username">Email address</label>
@@ -38,7 +38,7 @@
 
 						<div class="form-group">
 							<label for="password">Password</label>
-							<input type="password" id="password" name="password" class="form-control" placeholder="Password" />
+							<input id="password" name="password" type="password" class="form-control" placeholder="Enter password" />
 							<form:errors cssClass="error" path="password" />
 						</div>
 
