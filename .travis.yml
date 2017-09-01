@@ -7,8 +7,4 @@ cache:
 
 install:
 - cd oss
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script:
-
-- cd oss
-- mvn test
+- mvn clean test install -Dmaven.javadoc.skip=true -B -V
