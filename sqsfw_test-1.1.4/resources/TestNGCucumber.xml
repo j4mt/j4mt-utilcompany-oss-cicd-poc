@@ -8,7 +8,7 @@
     <test name="SqsWebsiteTests" verbose="4">
         <parameter name="browser" value="Firefox"/>
         <classes>
-            <class name="com.sqs.prestatests.TestNgBaseTest"/>
+            <class name="com.sqs.oss.TestNgBaseTest"/>
         </classes>
     </test>
 </suite>

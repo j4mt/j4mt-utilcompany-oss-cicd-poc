@@ -1,4 +1,4 @@
-Feature: Check the login page on Presta Shop works correctly
+Feature: Check submit meter read on OSS works correctly
 
   Scenario: Valid login
     Given I am on the login page

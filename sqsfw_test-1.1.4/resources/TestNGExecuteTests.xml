@@ -5,10 +5,10 @@
         <listener class-name="com.sqs.web.webdriver.WebDriverListener"/>
     </listeners>
 
-    <test name="PrestaBestPractice" verbose="4">
+    <test name="OSSSignInTest" verbose="4">
         <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="com.sqs.prestatests.PrestaSignInTest"/>
+            <class name="com.sqs.oss.OSSSignInTest"/>
         </classes>
     </test>
 

@@ -1,23 +1,23 @@
 package com.sqs.steps;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static ru.yandex.qatools.matchers.webdriver.TextMatcher.text;
-
-import com.sqs.pageobjects.prestashop.PrestaHome;
-import com.sqs.pageobjects.prestashop.PrestaSignIn;
+import com.sqs.pageobjects.oss.OSSHome;
+import com.sqs.pageobjects.oss.OSSSignIn;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.runtime.java.guice.ScenarioScoped;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static ru.yandex.qatools.matchers.webdriver.TextMatcher.text;
+
 @ScenarioScoped
 public class LoginSteps {
 
-  private PrestaSignIn prestaSignIn;
+  private OSSSignIn prestaSignIn;
 
   @Given("^I am on the login page$")
   public void iAmOnTheLoginPage() throws Throwable {
-    prestaSignIn = new PrestaHome().header.navigateToPrestaSignIn();
+    prestaSignIn = new OSSHome().header.navigateToOSSSignIn();
   }
 
   @When("^I enter (.*) and (.*)$")

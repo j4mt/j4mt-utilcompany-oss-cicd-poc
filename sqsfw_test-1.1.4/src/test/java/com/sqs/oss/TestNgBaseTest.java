@@ -1,4 +1,4 @@
-package com.sqs.prestatests;
+package com.sqs.oss;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
