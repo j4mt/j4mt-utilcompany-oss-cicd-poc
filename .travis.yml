@@ -10,7 +10,7 @@ cache:
 before_install:
   - mysql -u root -e 'CREATE DATABASE j4mtutil;'
   - mysql -u root -e "CREATE USER 'j4mtil'@'localhost' IDENTIFIED BY 'P@ssw0rd';"
-  - mysql -u root -e "GRANT ALL ON stockmarket.* TO 'makler'@'localhost';"
+  - mysql -u root -e "GRANT ALL ON j4mtutil.* TO 'j4mtutil'@'localhost';"
 
 install:
 - oss/ mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
