@@ -13,5 +13,6 @@ before_install:
   - mysql -u root -e "GRANT ALL ON j4mtutil.* TO 'j4mtutil'@'localhost';"
 
 install:
-- oss/ mvn clean package
+- cd oss
+- mvn clean package
 
