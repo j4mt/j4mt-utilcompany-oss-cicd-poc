@@ -13,6 +13,5 @@ before_install:
   - mysql -u root -e "GRANT ALL ON j4mtutil.* TO 'j4mtutil'@'localhost';"
 
 install:
-- oss/ mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script:
-- oss/ mvn test
+- oss/ mvn clean package
+
