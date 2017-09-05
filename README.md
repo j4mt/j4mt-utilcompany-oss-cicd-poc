@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/j4mt/j4mt-utilcompany-oss-cicd-poc.svg?branch=fix-sign-up-form-info-display)](https://travis-ci.org/j4mt/j4mt-utilcompany-oss-cicd-poc)
 # J4MT Util Company Inc
 
 mvn spring-boot:run to run with maven from the command line
