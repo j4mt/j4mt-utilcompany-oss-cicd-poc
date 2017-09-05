@@ -50,7 +50,7 @@
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-primary">Sign In</button>
+						<button type="submit" id="submit_login" class="btn btn-primary">Sign In</button>
 						<a class="btn btn-default" href="/forgot-password">Forgot Password</a>
 
 					</form:form>

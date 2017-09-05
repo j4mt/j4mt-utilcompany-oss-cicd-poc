@@ -7,7 +7,6 @@
 
 		<div class="right-column">
 
-
 			<div class="panel-heading">
 				<h3 class="panel-title">Forgot password?</h3>
 			</div>

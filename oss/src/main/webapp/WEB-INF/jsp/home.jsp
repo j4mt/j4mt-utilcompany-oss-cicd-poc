@@ -6,7 +6,6 @@
 
 		<div class="right-column">
 
-
 			<div class="panel-heading">
 				<h3 class="panel-title">Please signup</h3>
 			</div>
