@@ -8,9 +8,9 @@ cache:
    - $HOME/.m2
 
 before_install:
-  - mysql -e 'CREATE USER 'j4mt'@'localhost' IDENTIFIED BY 'P@ssw0rd';'
-  - mysql -e "GRANT ALL PRIVILEGES ON * . * TO 'j4mt'@'localhost';"
-  - mysql -e "CREATE DATABASE IF NOT EXISTS j4mtutil;"
+  - mysql -u root -e 'CREATE DATABASE j4mtutil;'
+  - mysql -u root -e "CREATE USER 'j4mtil'@'localhost' IDENTIFIED BY 'P@ssw0rd';"
+  - mysql -u root -e "GRANT ALL ON stockmarket.* TO 'makler'@'localhost';"
 
 install:
 - oss/ mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
